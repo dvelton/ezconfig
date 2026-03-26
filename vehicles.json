@@ -1,0 +1,2576 @@
+{
+  "categories": [
+    {
+      "id": "share-website",
+      "label": "I built a website and want to share it",
+      "icon": "🌐",
+      "vehicles": [
+        {
+          "id": "github-pages",
+          "name": "GitHub Pages",
+          "description": "Free hosting tied to a GitHub repository. Push your files, get a URL. If your project is already on GitHub, this is the simplest way to put it on the internet.",
+          "cost": "free",
+          "costDetail": "Free for public and private repos",
+          "complexity": "low",
+          "bestFor": "Simple sites, tools with no backend, portfolios, documentation",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "github-pages",
+          "example": {
+            "name": "Ask Bigger",
+            "url": "https://dvelton.github.io/ask-bigger/",
+            "repo": "https://github.com/dvelton/ask-bigger",
+            "note": "An educational site deployed entirely on GitHub Pages — no build step, no framework"
+          },
+          "tags": [
+            "static",
+            "free",
+            "beginner-friendly"
+          ]
+        },
+        {
+          "id": "cloudflare-pages",
+          "name": "Cloudflare Pages",
+          "description": "Free static hosting from Cloudflare with optional server-side functions. Similar to GitHub Pages but with some extra capabilities if you need a tiny bit of backend logic.",
+          "cost": "free",
+          "costDetail": "Generous free tier, unlimited bandwidth",
+          "complexity": "low",
+          "bestFor": "Static sites that need a bit of server logic, fast global delivery",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "static",
+            "free",
+            "edge"
+          ]
+        },
+        {
+          "id": "netlify",
+          "name": "Netlify",
+          "description": "Free hosting that also handles forms, identity (login), and serverless functions. Good if your site needs to collect form submissions or run small bits of server code.",
+          "cost": "free-tier",
+          "costDetail": "Free tier includes 100GB bandwidth, 300 build minutes/month",
+          "complexity": "low",
+          "bestFor": "Sites that need form handling, A/B testing, or light serverless functions",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "static",
+            "forms",
+            "serverless"
+          ]
+        },
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "description": "Free hosting that works especially well with React and Next.js. Includes serverless functions so you can add backend logic without managing a server.",
+          "cost": "free-tier",
+          "costDetail": "Free for hobby projects, 100GB bandwidth",
+          "complexity": "medium",
+          "bestFor": "React/Next.js apps, sites needing an API, anything beyond pure static files",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "react",
+            "nextjs",
+            "serverless"
+          ]
+        },
+        {
+          "id": "surge",
+          "name": "Surge.sh",
+          "description": "The fastest way to publish a static site. One command in the terminal and your site is live. No GitHub needed, no configuration files.",
+          "cost": "free",
+          "costDetail": "Free for basic use, paid tier for custom domains and SSL",
+          "complexity": "very-low",
+          "bestFor": "Quick demos, getting something online in 30 seconds",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "static",
+            "quick",
+            "minimal"
+          ]
+        },
+        {
+          "id": "neocities",
+          "name": "Neocities",
+          "description": "Free web hosting with a retro, indie ethos. Upload HTML/CSS/JS files and get a site. Good vibes, simple interface, no corporate overhead.",
+          "cost": "free",
+          "costDetail": "Free with 1GB storage, paid supporter tier for more",
+          "complexity": "very-low",
+          "bestFor": "Personal sites, creative projects, learning HTML",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "static",
+            "indie",
+            "creative"
+          ]
+        },
+        {
+          "id": "glitch",
+          "name": "Glitch",
+          "description": "Code in your browser and deploy instantly. Glitch gives you an online editor and free hosting in one place. Great for quick experiments you want to share immediately.",
+          "cost": "free",
+          "costDetail": "Free apps sleep after 5 min inactivity, wake on request",
+          "complexity": "low",
+          "bestFor": "Quick demos, prototypes, collaborative hacking, teaching",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser-ide",
+            "collaborative",
+            "prototyping"
+          ]
+        },
+        {
+          "id": "replit",
+          "name": "Replit",
+          "description": "Online coding environment that can build and deploy in almost any programming language. Code in your browser, click deploy, done. Also has AI coding assistants built in.",
+          "cost": "free-tier",
+          "costDetail": "Free for public projects, paid for always-on and private",
+          "complexity": "low",
+          "bestFor": "Prototyping, sharing runnable projects, multi-language projects",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser-ide",
+            "multi-language",
+            "prototyping"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-backend",
+      "label": "I need a real backend / database",
+      "icon": "🗄️",
+      "vehicles": [
+        {
+          "id": "vercel-neon",
+          "name": "Vercel + Neon",
+          "description": "A popular free combo: Vercel hosts your app and Neon gives you a real PostgreSQL database in the cloud. This is what you use when your tool needs to remember things — user accounts, saved data, anything that should survive closing the browser.",
+          "cost": "free-tier",
+          "costDetail": "Both have generous free tiers — Neon gives 0.5GB storage free",
+          "complexity": "medium",
+          "bestFor": "Full-stack apps with persistent data, user accounts, anything beyond a static site",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "vercel-neon",
+          "example": {
+            "name": "Hockey Tracker Pro",
+            "url": "https://hockey-tracker-pro.vercel.app/login",
+            "repo": "https://github.com/dvelton/hockey-tracker-pro",
+            "note": "Started as a static site, then added a real database when coaches needed accounts and season-long stats"
+          },
+          "tags": [
+            "full-stack",
+            "database",
+            "postgres",
+            "free"
+          ]
+        },
+        {
+          "id": "vercel-supabase",
+          "name": "Vercel + Supabase",
+          "description": "Like Vercel + Neon but Supabase gives you more out of the box: a database, user login/signup, file storage, and realtime features. Think of it as a backend-in-a-box.",
+          "cost": "free-tier",
+          "costDetail": "Free tier: 500MB database, 1GB file storage, 50K monthly active users",
+          "complexity": "medium",
+          "bestFor": "Apps needing user auth, file uploads, realtime updates, or all three",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "supabase",
+          "example": null,
+          "tags": [
+            "full-stack",
+            "auth",
+            "storage",
+            "realtime"
+          ]
+        },
+        {
+          "id": "railway",
+          "name": "Railway",
+          "description": "One-click deploy from GitHub. Railway detects what you built, sets up the right environment, and deploys it. Also offers databases (Postgres, MySQL, Redis) with one click.",
+          "cost": "free-tier",
+          "costDetail": "Free trial with $5 credit, then pay-as-you-go",
+          "complexity": "low",
+          "bestFor": "Quick full-stack deploys when you want minimal configuration",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "full-stack",
+            "one-click",
+            "database"
+          ]
+        },
+        {
+          "id": "render",
+          "name": "Render",
+          "description": "Managed hosting for web apps, APIs, and databases. Your app stays running all the time (unlike some free tiers that sleep). Good when you need something more reliable than a hobby tier.",
+          "cost": "free-tier",
+          "costDetail": "Free tier for static sites and web services (with spin-down), paid for always-on",
+          "complexity": "medium",
+          "bestFor": "Apps that need to be always-on, background jobs, cron tasks",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "full-stack",
+            "always-on",
+            "managed"
+          ]
+        },
+        {
+          "id": "fly-io",
+          "name": "Fly.io",
+          "description": "Deploy apps to servers around the world so they load fast no matter where your users are. Uses Docker containers, which means it can run almost anything.",
+          "cost": "free-tier",
+          "costDetail": "$5/month free credits cover small deployments",
+          "complexity": "medium",
+          "bestFor": "Full-stack apps that need to be fast globally, anything Docker-based",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "global",
+            "docker",
+            "edge"
+          ]
+        },
+        {
+          "id": "deno-deploy",
+          "name": "Deno Deploy",
+          "description": "Run JavaScript or TypeScript code on servers around the world with zero configuration. Starts instantly, scales automatically. Good for APIs and bots.",
+          "cost": "free-tier",
+          "costDetail": "Free tier: 1M requests/month, 100GB data transfer",
+          "complexity": "low",
+          "bestFor": "APIs, bots, lightweight server-side logic",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "edge",
+            "javascript",
+            "serverless"
+          ]
+        },
+        {
+          "id": "cloudflare-workers",
+          "name": "Cloudflare Workers",
+          "description": "Run small pieces of JavaScript at the edge of the internet — meaning your code runs on servers close to whoever is using it. Extremely fast and extremely cheap.",
+          "cost": "free-tier",
+          "costDetail": "Free: 100,000 requests/day",
+          "complexity": "medium",
+          "bestFor": "APIs, URL shorteners, redirects, lightweight server logic",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "edge",
+            "serverless",
+            "fast"
+          ]
+        },
+        {
+          "id": "val-town",
+          "name": "Val Town",
+          "description": "Write a function, get a URL. Val Town lets you write small scripts that run in the cloud and can be called as API endpoints. No deployment step — just write and it is live.",
+          "cost": "free-tier",
+          "costDetail": "Free tier with limits on compute and storage",
+          "complexity": "very-low",
+          "bestFor": "Quick API endpoints, webhooks, scheduled scripts, prototyping",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "serverless",
+            "instant",
+            "scripts"
+          ]
+        },
+        {
+          "id": "pocketbase",
+          "name": "PocketBase",
+          "description": "A complete backend in a single file. Gives you a database (SQLite), user authentication, file storage, and an admin panel. Download one file, run it, and you have a backend.",
+          "cost": "free",
+          "costDetail": "Open source, free to self-host",
+          "complexity": "medium",
+          "bestFor": "Adding a backend to a frontend project without cloud services",
+          "platform": [
+            "web",
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "self-hosted",
+            "sqlite",
+            "auth",
+            "open-source"
+          ]
+        },
+        {
+          "id": "firebase",
+          "name": "Firebase",
+          "description": "Google's all-in-one app platform. Database that syncs in realtime, user login, file storage, hosting, push notifications. Lots of features, but also lots of Google lock-in.",
+          "cost": "free-tier",
+          "costDetail": "Spark plan (free) covers most hobby projects",
+          "complexity": "medium",
+          "bestFor": "Apps needing realtime data sync, push notifications, quick prototyping",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "google",
+            "realtime",
+            "mobile",
+            "hosting"
+          ]
+        },
+        {
+          "id": "supabase-standalone",
+          "name": "Supabase",
+          "description": "An open-source alternative to Firebase built on PostgreSQL. Database, authentication, file storage, edge functions, and realtime — all with a SQL database you can query directly.",
+          "cost": "free-tier",
+          "costDetail": "Free: 500MB DB, 1GB storage, 50K monthly users",
+          "complexity": "medium",
+          "bestFor": "Full backend without vendor lock-in, teams that want SQL",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "supabase",
+          "example": null,
+          "tags": [
+            "open-source",
+            "postgres",
+            "auth",
+            "realtime"
+          ]
+        },
+        {
+          "id": "turso",
+          "name": "Turso",
+          "description": "SQLite databases that run on the edge — meaning your database is distributed globally and responds fast everywhere. Uses libSQL, an open fork of SQLite.",
+          "cost": "free-tier",
+          "costDetail": "Free: 500 databases, 9GB storage",
+          "complexity": "medium",
+          "bestFor": "Apps that need a SQL database but not a heavyweight cloud Postgres",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "sqlite",
+            "edge",
+            "database"
+          ]
+        },
+        {
+          "id": "upstash",
+          "name": "Upstash",
+          "description": "Serverless Redis (a fast key-value store) and message queues in the cloud. Pay only for what you use. Good for caching, rate limiting, and background job processing.",
+          "cost": "free-tier",
+          "costDetail": "Free: 10K commands/day for Redis, limited QStash messages",
+          "complexity": "medium",
+          "bestFor": "Caching, rate limiting, session storage, background jobs",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "redis",
+            "serverless",
+            "caching"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desktop-app",
+      "label": "I want a desktop app",
+      "icon": "🖥️",
+      "vehicles": [
+        {
+          "id": "electron",
+          "name": "Electron",
+          "description": "Take your web app and wrap it in a desktop application. The result is a .app (Mac) or .exe (Windows) that people download and run like any other program. Slack, VS Code, and Discord are all Electron apps.",
+          "cost": "free",
+          "costDetail": "Open source",
+          "complexity": "medium",
+          "bestFor": "Cross-platform desktop apps, turning existing web apps into desktop apps",
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ],
+          "promptTemplate": "electron",
+          "example": null,
+          "tags": [
+            "cross-platform",
+            "web-based",
+            "desktop"
+          ]
+        },
+        {
+          "id": "tauri",
+          "name": "Tauri",
+          "description": "Like Electron but much smaller and faster. Uses your operating system's built-in browser engine instead of bundling Chrome. The resulting app is a fraction of the size.",
+          "cost": "free",
+          "costDetail": "Open source",
+          "complexity": "medium",
+          "bestFor": "Lightweight desktop apps, performance-sensitive tools",
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "lightweight",
+            "rust",
+            "desktop"
+          ]
+        },
+        {
+          "id": "menubar-swiftui",
+          "name": "macOS Menubar App (SwiftUI)",
+          "description": "A tiny Mac app that lives in your menu bar — the row of icons at the top-right of your screen. Click the icon, get a dropdown with useful info or quick actions. Feels native because it is native.",
+          "cost": "free",
+          "costDetail": "Requires Xcode (free) on Mac",
+          "complexity": "medium",
+          "bestFor": "Quick-access Mac utilities, status indicators, ambient info displays",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": "menubar-app",
+          "example": null,
+          "tags": [
+            "native",
+            "macos",
+            "utility",
+            "delightful"
+          ]
+        },
+        {
+          "id": "menubar-python",
+          "name": "macOS Menubar App (Python/rumps)",
+          "description": "Same idea as a SwiftUI menubar app but built with Python using the rumps library. Simpler to set up if you are already working in Python. No Xcode needed.",
+          "cost": "free",
+          "costDetail": "Open source, requires Python",
+          "complexity": "low",
+          "bestFor": "Mac menubar tools when Python is already your language",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": "menubar-app",
+          "example": null,
+          "tags": [
+            "python",
+            "macos",
+            "utility"
+          ]
+        },
+        {
+          "id": "wails",
+          "name": "Wails",
+          "description": "Build a desktop app with a Go backend and a web frontend. Combines the performance of Go with the flexibility of HTML/CSS/JS for the interface.",
+          "cost": "free",
+          "costDetail": "Open source",
+          "complexity": "medium",
+          "bestFor": "Desktop apps that need strong backend performance",
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "go",
+            "desktop",
+            "cross-platform"
+          ]
+        },
+        {
+          "id": "pyinstaller",
+          "name": "PyInstaller",
+          "description": "Package a Python script into a standalone executable that anyone can run without installing Python. Double-click to run. Works on Mac, Windows, and Linux.",
+          "cost": "free",
+          "costDetail": "Open source",
+          "complexity": "low",
+          "bestFor": "Distributing Python tools to people who don't have Python installed",
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "python",
+            "executable",
+            "distribution"
+          ]
+        },
+        {
+          "id": "pkg-node",
+          "name": "pkg (Node.js)",
+          "description": "Package a Node.js script into a single executable file. The person running it doesn't need Node.js installed — just download and run.",
+          "cost": "free",
+          "costDetail": "Open source",
+          "complexity": "low",
+          "bestFor": "Distributing Node.js CLI tools without requiring Node installation",
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "nodejs",
+            "executable",
+            "distribution"
+          ]
+        },
+        {
+          "id": "applescript-app",
+          "name": "AppleScript App",
+          "description": "Write an AppleScript (Mac's built-in automation language) and save it as a .app file. Double-click to run. Good for simple Mac automations that need to feel like real apps.",
+          "cost": "free",
+          "costDetail": "Built into macOS",
+          "complexity": "very-low",
+          "bestFor": "Simple Mac automations packaged as clickable apps",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "automation",
+            "simple",
+            "delightful"
+          ]
+        },
+        {
+          "id": "automator-app",
+          "name": "Automator App",
+          "description": "Mac's built-in workflow builder, saved as a standalone application. Drag and drop actions like \"rename files\" or \"convert images\" and save the whole thing as an app anyone can double-click.",
+          "cost": "free",
+          "costDetail": "Built into macOS",
+          "complexity": "very-low",
+          "bestFor": "File processing, batch operations, system tasks on Mac",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "automation",
+            "no-code",
+            "delightful"
+          ]
+        },
+        {
+          "id": "macos-screensaver",
+          "name": "macOS Screensaver",
+          "description": "Build a custom screensaver that runs when your Mac is idle. Could show data visualizations, generative art, a photo slideshow, or anything you can display on screen.",
+          "cost": "free",
+          "costDetail": "Requires Xcode",
+          "complexity": "medium",
+          "bestFor": "Ambient data displays, generative art, creative installations",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "creative",
+            "ambient",
+            "delightful"
+          ]
+        },
+        {
+          "id": "macos-widget",
+          "name": "macOS Widget",
+          "description": "A small widget that appears in your Mac's Notification Center or on your desktop. Glanceable info like weather, stats, countdowns, or quick actions.",
+          "cost": "free",
+          "costDetail": "Requires Xcode, uses WidgetKit",
+          "complexity": "medium",
+          "bestFor": "At-a-glance information on your Mac desktop",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "widget",
+            "glanceable",
+            "delightful"
+          ]
+        },
+        {
+          "id": "windows-tray",
+          "name": "Windows System Tray App",
+          "description": "An app that lives in the Windows notification area (bottom-right of the screen). Similar concept to a Mac menubar app — small, always accessible, out of the way.",
+          "cost": "free",
+          "costDetail": "Can be built with .NET, Electron, or Python",
+          "complexity": "medium",
+          "bestFor": "Quick-access Windows utilities, status monitors",
+          "platform": [
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "windows",
+            "utility",
+            "tray"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "label": "I want it on my phone",
+      "icon": "📱",
+      "vehicles": [
+        {
+          "id": "pwa",
+          "name": "Progressive Web App (PWA)",
+          "description": "Turn your website into something that feels like a phone app. Users can \"install\" it from the browser — it gets an icon on the home screen, works offline, and runs without the browser toolbar. No app store needed.",
+          "cost": "free",
+          "costDetail": "Just needs proper configuration of your existing site",
+          "complexity": "low",
+          "bestFor": "App-like experience without app store approval, offline-capable tools",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": "pwa",
+          "example": null,
+          "tags": [
+            "mobile",
+            "offline",
+            "installable"
+          ]
+        },
+        {
+          "id": "expo",
+          "name": "Expo / React Native",
+          "description": "Build real native mobile apps using JavaScript. The apps look and feel native because they use actual iOS and Android components. Expo simplifies the process significantly compared to raw React Native.",
+          "cost": "free",
+          "costDetail": "Free to build, app store fees to publish ($99/year Apple, $25 one-time Google)",
+          "complexity": "high",
+          "bestFor": "Real native mobile apps that need device features (camera, GPS, etc.)",
+          "platform": [
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "native",
+            "javascript",
+            "mobile"
+          ]
+        },
+        {
+          "id": "capacitor",
+          "name": "Capacitor",
+          "description": "Take an existing web app and wrap it in a native mobile shell. The result goes on the App Store or Google Play. You keep your web codebase and add native features as needed.",
+          "cost": "free",
+          "costDetail": "Open source, app store fees to publish",
+          "complexity": "medium",
+          "bestFor": "Converting existing web apps into mobile apps without rewriting",
+          "platform": [
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "hybrid",
+            "web-to-native",
+            "mobile"
+          ]
+        },
+        {
+          "id": "testflight",
+          "name": "TestFlight",
+          "description": "Apple's official way to share iPhone and iPad apps with testers before publishing to the App Store. Send people a link, they install your app. Up to 10,000 testers, no App Store review needed.",
+          "cost": "free",
+          "costDetail": "Free but requires Apple Developer account ($99/year)",
+          "complexity": "medium",
+          "bestFor": "Sharing iOS apps with a small group before full release",
+          "platform": [
+            "ios"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ios",
+            "testing",
+            "distribution"
+          ]
+        },
+        {
+          "id": "shortcuts-ios",
+          "name": "Shortcuts (iOS/macOS)",
+          "description": "Apple's visual automation tool built into every iPhone, iPad, and Mac. Chain together actions (send a message, create a file, call an API) into one-tap or voice-activated workflows. No coding, visual drag-and-drop.",
+          "cost": "free",
+          "costDetail": "Built into iOS and macOS",
+          "complexity": "very-low",
+          "bestFor": "Quick personal automations, voice-activated tools (\"Hey Siri, run my tool\")",
+          "platform": [
+            "ios",
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "apple",
+            "no-code",
+            "automation",
+            "delightful"
+          ]
+        },
+        {
+          "id": "scriptable",
+          "name": "Scriptable",
+          "description": "Write JavaScript that runs on your iPhone with access to native features — create home screen widgets, interact with your calendar, send notifications, process files. A programmable layer on top of your phone.",
+          "cost": "free",
+          "costDetail": "Free app on the App Store",
+          "complexity": "low",
+          "bestFor": "iPhone home screen widgets, personal automations, quick tools",
+          "platform": [
+            "ios"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ios",
+            "javascript",
+            "widgets",
+            "delightful"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automate",
+      "label": "I want to automate something",
+      "icon": "⚡",
+      "vehicles": [
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "description": "Automated tasks that run on GitHub's servers, triggered by events (code push, schedule, manual button). Runs for free on public repos. Common uses: build your project, run tests, deploy, or run a script on a schedule.",
+          "cost": "free",
+          "costDetail": "Free for public repos, 2,000 minutes/month for private",
+          "complexity": "medium",
+          "bestFor": "Scheduled tasks, CI/CD, repo automation, anything triggered by code changes",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "github-actions",
+          "example": null,
+          "tags": [
+            "ci-cd",
+            "scheduled",
+            "github"
+          ]
+        },
+        {
+          "id": "agentic-workflows",
+          "name": "Agentic Workflows",
+          "description": "GitHub Actions powered by AI. Instead of writing step-by-step scripts, you describe what you want in natural language and an AI agent figures out how to do it. Runs in GitHub Actions with Copilot.",
+          "cost": "free",
+          "costDetail": "Included with GitHub Copilot",
+          "complexity": "medium",
+          "bestFor": "AI-powered repo automation, complex tasks described in natural language",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ai",
+            "github",
+            "automation"
+          ]
+        },
+        {
+          "id": "cron-cloud",
+          "name": "Cron Jobs (Cloud)",
+          "description": "Run a script on a schedule in the cloud — every hour, every day, every Monday at 9am. Services like Railway, Render, and Fly.io let you set this up with their free tiers.",
+          "cost": "free-tier",
+          "costDetail": "Depends on hosting provider",
+          "complexity": "low",
+          "bestFor": "Recurring tasks, daily reports, data syncing, monitoring",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "scheduled",
+            "cloud",
+            "recurring"
+          ]
+        },
+        {
+          "id": "launchagent",
+          "name": "macOS LaunchAgent",
+          "description": "A background process that runs on your Mac — at login, on a schedule, or when certain conditions are met. Built into macOS. Good for local automations that don't need the cloud.",
+          "cost": "free",
+          "costDetail": "Built into macOS",
+          "complexity": "medium",
+          "bestFor": "Local Mac automations, background daemons, scheduled local tasks",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "background",
+            "local"
+          ]
+        },
+        {
+          "id": "zapier",
+          "name": "Zapier",
+          "description": "Connect apps together with if-this-then-that logic. No coding required. \"When a form is submitted, add a row to Google Sheets and send a Slack message.\" Thousands of apps supported.",
+          "cost": "free-tier",
+          "costDetail": "Free: 5 zaps, 100 tasks/month",
+          "complexity": "very-low",
+          "bestFor": "Connecting apps without code, simple multi-step automations",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "zapier",
+          "example": null,
+          "tags": [
+            "no-code",
+            "integration",
+            "automation"
+          ]
+        },
+        {
+          "id": "make",
+          "name": "Make (Integromat)",
+          "description": "Visual automation builder — more powerful than Zapier for complex workflows. Drag and drop modules on a canvas, connect them, add branching logic. Free tier is more generous than Zapier's.",
+          "cost": "free-tier",
+          "costDetail": "Free: 1,000 operations/month",
+          "complexity": "low",
+          "bestFor": "Complex multi-step automations with branching, data transformation",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "visual",
+            "automation",
+            "integration"
+          ]
+        },
+        {
+          "id": "n8n",
+          "name": "n8n",
+          "description": "Self-hosted workflow automation. Like Zapier/Make but you run it on your own server, so there are no limits on usage. Open source and free. Also available as a cloud service.",
+          "cost": "free",
+          "costDetail": "Free to self-host, cloud version has paid plans",
+          "complexity": "medium",
+          "bestFor": "Full control over automations, no vendor limits, privacy-sensitive workflows",
+          "platform": [
+            "web",
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "self-hosted",
+            "open-source",
+            "automation"
+          ]
+        },
+        {
+          "id": "ifttt",
+          "name": "IFTTT",
+          "description": "The simplest automation tool: if this happens, then do that. One trigger, one action. Great for smart home stuff and simple connections between services.",
+          "cost": "free-tier",
+          "costDetail": "Free: 2 applets",
+          "complexity": "very-low",
+          "bestFor": "Smart home automation, simple single-step triggers",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "simple",
+            "smart-home",
+            "automation"
+          ]
+        },
+        {
+          "id": "task-scheduler",
+          "name": "Windows Task Scheduler",
+          "description": "Built into every Windows PC. Run a script or program on a schedule or when you log in. The Windows equivalent of macOS LaunchAgents.",
+          "cost": "free",
+          "costDetail": "Built into Windows",
+          "complexity": "low",
+          "bestFor": "Scheduled Windows automations, background tasks on your PC",
+          "platform": [
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "windows",
+            "scheduled",
+            "local"
+          ]
+        },
+        {
+          "id": "val-town-cron",
+          "name": "Val Town (Scheduled)",
+          "description": "Write a script in Val Town and set it to run on a schedule. No server to manage — just write the code and set the interval. Good for lightweight recurring tasks.",
+          "cost": "free-tier",
+          "costDetail": "Free tier with limited schedule frequency",
+          "complexity": "very-low",
+          "bestFor": "Lightweight scheduled jobs, monitoring, data collection",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "serverless",
+            "scheduled",
+            "simple"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser-extension",
+      "label": "I want to extend my browser",
+      "icon": "🔌",
+      "vehicles": [
+        {
+          "id": "chrome-extension",
+          "name": "Chrome Extension",
+          "description": "Add custom functionality to Chrome (and Edge, Brave, and other Chrome-based browsers). Can add buttons, modify pages, create popups, or run in the background. 3 billion Chrome users can use it.",
+          "cost": "free",
+          "costDetail": "Free to build, $5 one-time fee to publish on Chrome Web Store",
+          "complexity": "medium",
+          "bestFor": "Browser-based utilities, page modifications, productivity tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "chrome-extension",
+          "example": null,
+          "tags": [
+            "browser",
+            "chrome",
+            "productivity"
+          ]
+        },
+        {
+          "id": "firefox-addon",
+          "name": "Firefox Add-on",
+          "description": "Same concept as a Chrome extension but for Firefox. Firefox has a strong privacy-focused user base. Many Chrome extensions can be adapted to Firefox with minimal changes.",
+          "cost": "free",
+          "costDetail": "Free to build and publish",
+          "complexity": "medium",
+          "bestFor": "Privacy-focused browser tools, Firefox-specific features",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser",
+            "firefox",
+            "privacy"
+          ]
+        },
+        {
+          "id": "safari-extension",
+          "name": "Safari Extension",
+          "description": "Extension for Safari on Mac and iOS. Unique because Safari extensions can also run on iPhone and iPad — so one extension works across all Apple devices.",
+          "cost": "free",
+          "costDetail": "Requires Apple Developer account ($99/year) to distribute via App Store",
+          "complexity": "medium",
+          "bestFor": "Safari-specific tools, cross-device extensions (Mac + iPhone)",
+          "platform": [
+            "mac",
+            "ios"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser",
+            "safari",
+            "apple"
+          ]
+        },
+        {
+          "id": "bookmarklet",
+          "name": "Bookmarklet",
+          "description": "A snippet of JavaScript saved as a browser bookmark. Click the bookmark and it runs on whatever page you are looking at. Dead simple — no installation, no permissions, no app store. Just drag a link to your bookmarks bar.",
+          "cost": "free",
+          "costDetail": "No cost, no tools needed",
+          "complexity": "very-low",
+          "bestFor": "One-click actions on any webpage, quick transformations, page scrapers",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "simple",
+            "no-install",
+            "browser",
+            "delightful"
+          ]
+        },
+        {
+          "id": "userscript",
+          "name": "Userscript (Tampermonkey)",
+          "description": "A script that automatically modifies websites you visit. Install Tampermonkey (free browser extension), add your script, and every time you visit a site, your customizations are applied. Like having a personal web developer who tweaks every site for you.",
+          "cost": "free",
+          "costDetail": "Tampermonkey is free",
+          "complexity": "low",
+          "bestFor": "Customizing sites you use daily, adding features to other people's sites",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser",
+            "customization",
+            "automation"
+          ]
+        },
+        {
+          "id": "chrome-side-panel",
+          "name": "Chrome Side Panel",
+          "description": "A panel that slides out from the side of your Chrome browser. Lives alongside your browsing without covering the page. Good for reference tools, notes, or dashboards you want visible while working.",
+          "cost": "free",
+          "costDetail": "Part of Chrome extension APIs",
+          "complexity": "medium",
+          "bestFor": "Reference tools, side-by-side dashboards, persistent panels",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser",
+            "chrome",
+            "panel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extend-tools",
+      "label": "I want to extend a tool I already use",
+      "icon": "🧩",
+      "vehicles": [
+        {
+          "id": "copilot-skill",
+          "name": "Copilot CLI Skill",
+          "description": "A custom capability you add to GitHub Copilot in the terminal. Skills give Copilot specialized knowledge or abilities — like knowing about your company's coding standards or being able to interact with your internal tools.",
+          "cost": "free",
+          "costDetail": "Requires GitHub Copilot subscription",
+          "complexity": "low",
+          "bestFor": "Custom AI-assisted workflows in the terminal",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ai",
+            "copilot",
+            "terminal"
+          ]
+        },
+        {
+          "id": "mcp-server",
+          "name": "MCP Server",
+          "description": "A custom tool server that any AI agent can use. MCP (Model Context Protocol) is a standard way to give AI tools new abilities — search your database, read your documents, interact with your APIs. Works with Copilot, Claude, and other AI tools.",
+          "cost": "free",
+          "costDetail": "Open standard, free to implement",
+          "complexity": "medium",
+          "bestFor": "Making your data or APIs accessible to AI tools",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": "mcp-server",
+          "example": {
+            "name": "Doublecheck",
+            "url": null,
+            "repo": "https://github.com/dvelton/doublecheck",
+            "note": "An MCP server that helps fact-check AI output with a three-layer verification pipeline"
+          },
+          "tags": [
+            "ai",
+            "protocol",
+            "integration"
+          ]
+        },
+        {
+          "id": "copilot-extension",
+          "name": "Copilot Extension",
+          "description": "A custom AI assistant that lives inside GitHub Copilot Chat. Users @mention your extension and it responds with specialized knowledge or actions. Can be used in VS Code, GitHub.com, or other Copilot surfaces.",
+          "cost": "free",
+          "costDetail": "Free to build, requires Copilot",
+          "complexity": "medium",
+          "bestFor": "Custom AI assistants for specific domains or workflows",
+          "platform": [
+            "web",
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ai",
+            "copilot",
+            "chat"
+          ]
+        },
+        {
+          "id": "custom-gpt",
+          "name": "Custom GPT (ChatGPT)",
+          "description": "Create a custom version of ChatGPT with your own instructions, conversation starters, and uploaded documents. No coding — just fill in a form and ChatGPT becomes a specialized assistant for your domain.",
+          "cost": "freemium",
+          "costDetail": "Requires ChatGPT Plus ($20/month)",
+          "complexity": "very-low",
+          "bestFor": "Specialized AI assistants without any coding",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ai",
+            "no-code",
+            "chatgpt"
+          ]
+        },
+        {
+          "id": "claude-project",
+          "name": "Claude Project",
+          "description": "Create a project in Claude with custom instructions and uploaded documents. Claude reads your docs and answers questions with that context. Like giving Claude a briefing book for your specific domain.",
+          "cost": "freemium",
+          "costDetail": "Requires Claude Pro ($20/month)",
+          "complexity": "very-low",
+          "bestFor": "Domain-specific AI assistant with document context",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ai",
+            "no-code",
+            "claude"
+          ]
+        },
+        {
+          "id": "vscode-extension",
+          "name": "VS Code Extension",
+          "description": "A plugin for Visual Studio Code — the most popular code editor. Extensions can add panels, commands, language support, themes, or entirely new features. Published on the VS Code Marketplace.",
+          "cost": "free",
+          "costDetail": "Free to build and publish",
+          "complexity": "medium",
+          "bestFor": "Developer workflow tools, custom editor panels, language support",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "editor",
+            "vscode",
+            "developer"
+          ]
+        },
+        {
+          "id": "obsidian-plugin",
+          "name": "Obsidian Plugin",
+          "description": "A plugin for Obsidian, the popular note-taking app. Plugins can add new commands, panels, views, or modify how notes work. Great if your tool relates to knowledge management or note-taking workflows.",
+          "cost": "free",
+          "costDetail": "Free to build, Obsidian is free for personal use",
+          "complexity": "medium",
+          "bestFor": "Knowledge management tools, note automation, research workflows",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "notes",
+            "knowledge",
+            "markdown"
+          ]
+        },
+        {
+          "id": "notion-integration",
+          "name": "Notion Integration",
+          "description": "Connect to Notion's API to read and write databases, pages, and blocks. Build tools that create Notion pages, update databases, or sync data from other sources into your Notion workspace.",
+          "cost": "free",
+          "costDetail": "Notion API is free, Notion itself has free and paid tiers",
+          "complexity": "medium",
+          "bestFor": "Automating Notion workflows, syncing external data into Notion",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "notion",
+            "api",
+            "productivity"
+          ]
+        },
+        {
+          "id": "raycast-extension",
+          "name": "Raycast Extension",
+          "description": "A custom command for Raycast, the Mac launcher app. Hit your keyboard shortcut, type a command, and your tool runs. Raycast extensions feel fast and native. Published on the Raycast Store.",
+          "cost": "free",
+          "costDetail": "Free to build and publish, Raycast is free",
+          "complexity": "low",
+          "bestFor": "Quick-access Mac tools, search commands, keyboard-driven utilities",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": "raycast-extension",
+          "example": null,
+          "tags": [
+            "macos",
+            "launcher",
+            "keyboard",
+            "delightful"
+          ]
+        },
+        {
+          "id": "alfred-workflow",
+          "name": "Alfred Workflow",
+          "description": "An automation for Alfred, the Mac productivity launcher. Type a keyword, Alfred runs your workflow. Can chain actions together: search something, process the result, output it somewhere. Alfred is the OG Mac launcher.",
+          "cost": "free",
+          "costDetail": "Workflows require Alfred Powerpack (one-time purchase)",
+          "complexity": "low",
+          "bestFor": "Keyboard-driven Mac productivity, multi-step automations",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "launcher",
+            "keyboard"
+          ]
+        },
+        {
+          "id": "stream-deck",
+          "name": "Stream Deck Plugin",
+          "description": "A custom button action for the Elgato Stream Deck — a physical device with programmable LCD buttons on your desk. Press a button and something happens. Not just for streamers: knowledge workers use them for shortcuts and automations.",
+          "cost": "free",
+          "costDetail": "Free to build, requires Stream Deck hardware ($80-250)",
+          "complexity": "medium",
+          "bestFor": "Physical-button shortcuts, one-press automations, control panels",
+          "platform": [
+            "mac",
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "hardware",
+            "physical",
+            "shortcuts",
+            "delightful"
+          ]
+        },
+        {
+          "id": "popclip",
+          "name": "PopClip Extension",
+          "description": "On Mac, when you select text, PopClip shows a floating toolbar with actions. Build a custom action: select text, click your button, something happens (translate it, look it up, send it somewhere, transform it).",
+          "cost": "free",
+          "costDetail": "Free to build, PopClip app is paid ($13)",
+          "complexity": "low",
+          "bestFor": "Quick actions on selected text, text transformation, lookup tools",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "text",
+            "utility",
+            "delightful"
+          ]
+        },
+        {
+          "id": "bettertouchtool",
+          "name": "BetterTouchTool Widget",
+          "description": "Custom widgets for Mac's Touch Bar, trackpad gestures, keyboard shortcuts, or the new notch area. BetterTouchTool is a power-user Mac customization tool that lets you make almost anything happen from almost any input.",
+          "cost": "freemium",
+          "costDetail": "BetterTouchTool is paid ($10 for 2 years)",
+          "complexity": "medium",
+          "bestFor": "Personalized Mac input device actions, Touch Bar customization",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "input",
+            "customization"
+          ]
+        },
+        {
+          "id": "keyboard-maestro",
+          "name": "Keyboard Maestro Macro",
+          "description": "The most powerful Mac automation tool. Trigger complex multi-step workflows from a hotkey, menu item, or event. Can control any application, manipulate files, run scripts, interact with web pages.",
+          "cost": "paid",
+          "costDetail": "$36 one-time purchase",
+          "complexity": "medium",
+          "bestFor": "Complex multi-step Mac automations, power-user workflows",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "automation",
+            "power-user"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workplace-tools",
+      "label": "I want a tool inside the apps I use for work",
+      "icon": "💼",
+      "vehicles": [
+        {
+          "id": "word-addin",
+          "name": "Word Add-in",
+          "description": "A custom panel, button, or ribbon tab inside Microsoft Word. Can read and modify documents, insert content, format text, or add a sidebar with tools. Works in Word on desktop and Word on the web.",
+          "cost": "free",
+          "costDetail": "Free to build with Office Add-ins framework",
+          "complexity": "medium",
+          "bestFor": "Document automation, formatting tools, clause libraries, compliance checks",
+          "platform": [
+            "web",
+            "mac",
+            "windows"
+          ],
+          "promptTemplate": "word-addin",
+          "example": null,
+          "tags": [
+            "office",
+            "word",
+            "documents",
+            "work"
+          ]
+        },
+        {
+          "id": "excel-addin",
+          "name": "Excel Add-in",
+          "description": "Custom functions, panels, and task panes inside Microsoft Excel. Add new formulas that pull live data, build analysis tools, or create custom data entry interfaces right inside the spreadsheet.",
+          "cost": "free",
+          "costDetail": "Free to build with Office Add-ins framework",
+          "complexity": "medium",
+          "bestFor": "Custom formulas, financial tools, data transforms, reporting dashboards",
+          "platform": [
+            "web",
+            "mac",
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "office",
+            "excel",
+            "spreadsheet",
+            "work"
+          ]
+        },
+        {
+          "id": "powerpoint-addin",
+          "name": "PowerPoint Add-in",
+          "description": "Custom tools inside PowerPoint. Generate slides from data, enforce brand guidelines, insert dynamic content, or build a sidebar that helps create presentations faster.",
+          "cost": "free",
+          "costDetail": "Free to build",
+          "complexity": "medium",
+          "bestFor": "Slide generators, brand enforcement, data-to-deck tools",
+          "platform": [
+            "web",
+            "mac",
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "office",
+            "powerpoint",
+            "presentations",
+            "work"
+          ]
+        },
+        {
+          "id": "outlook-addin",
+          "name": "Outlook Add-in",
+          "description": "A custom panel that appears inside Outlook when reading or composing emails. Can look up information, suggest responses, file emails, or connect to external systems like a CRM.",
+          "cost": "free",
+          "costDetail": "Free to build",
+          "complexity": "medium",
+          "bestFor": "Email triage, CRM integration, meeting prep, compliance tools",
+          "platform": [
+            "web",
+            "mac",
+            "windows"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "office",
+            "outlook",
+            "email",
+            "work"
+          ]
+        },
+        {
+          "id": "teams-app",
+          "name": "Teams App",
+          "description": "A custom app inside Microsoft Teams — can be a tab (custom webpage in a channel), a bot (responds to messages), a message extension (actions on messages), or a personal app (private tool for individual users).",
+          "cost": "free",
+          "costDetail": "Free to build with Teams Toolkit",
+          "complexity": "medium",
+          "bestFor": "Team dashboards, approval workflows, Q&A bots, quick-reference tools",
+          "platform": [
+            "web",
+            "mac",
+            "windows",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": "teams-app",
+          "example": null,
+          "tags": [
+            "teams",
+            "collaboration",
+            "work"
+          ]
+        },
+        {
+          "id": "google-sheets-addon",
+          "name": "Google Sheets Add-on",
+          "description": "Custom functions and sidebars inside Google Sheets. Add formulas that call APIs, build data processing tools, or create custom menus for repeated tasks. Published on Google Workspace Marketplace.",
+          "cost": "free",
+          "costDetail": "Free to build with Apps Script",
+          "complexity": "medium",
+          "bestFor": "Data tools for spreadsheet users, custom formulas, batch processing",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "google",
+            "spreadsheet",
+            "work"
+          ]
+        },
+        {
+          "id": "google-docs-addon",
+          "name": "Google Docs Add-on",
+          "description": "A custom sidebar or menu inside Google Docs. Can read and modify documents, insert templates, check formatting, or add workflow features like review and approval.",
+          "cost": "free",
+          "costDetail": "Free to build with Apps Script",
+          "complexity": "medium",
+          "bestFor": "Writing assistants, citation tools, clause libraries, template inserters",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "google",
+            "documents",
+            "work"
+          ]
+        },
+        {
+          "id": "google-slides-addon",
+          "name": "Google Slides Add-on",
+          "description": "Custom tools inside Google Slides. Auto-generate presentations from data, enforce templates, or add interactive features to the slide editing experience.",
+          "cost": "free",
+          "costDetail": "Free to build with Apps Script",
+          "complexity": "medium",
+          "bestFor": "Presentation generators, template tools, data visualization in slides",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "google",
+            "presentations",
+            "work"
+          ]
+        },
+        {
+          "id": "sharepoint-webpart",
+          "name": "SharePoint Web Part",
+          "description": "A custom component on a SharePoint page. Can display data, embed tools, show dashboards, or connect to external APIs. Drag it onto any SharePoint page in your organization.",
+          "cost": "free",
+          "costDetail": "Free with Microsoft 365 subscription",
+          "complexity": "medium",
+          "bestFor": "Intranet dashboards, team tools, data displays, internal portals",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "sharepoint",
+            "microsoft",
+            "intranet",
+            "work"
+          ]
+        },
+        {
+          "id": "power-automate",
+          "name": "Power Automate Flow",
+          "description": "Visual workflow builder for Microsoft 365. If someone submits a form, automatically send an email, create a Teams message, and add a row to SharePoint. Hundreds of connectors to Microsoft and third-party services.",
+          "cost": "free-tier",
+          "costDetail": "Included with most Microsoft 365 plans",
+          "complexity": "low",
+          "bestFor": "Approval chains, document routing, notification rules, Microsoft 365 automation",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "microsoft",
+            "no-code",
+            "automation",
+            "work"
+          ]
+        },
+        {
+          "id": "power-apps",
+          "name": "Power Apps",
+          "description": "Low-code app builder from Microsoft. Build apps that run on phones, tablets, and inside Teams. Connect to SharePoint, Excel, SQL, and hundreds of data sources. No traditional coding needed.",
+          "cost": "free-tier",
+          "costDetail": "Included with most Microsoft 365 plans for basic use",
+          "complexity": "low",
+          "bestFor": "Internal business apps, data entry forms, inspection tools, approval flows",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "microsoft",
+            "low-code",
+            "mobile",
+            "work"
+          ]
+        },
+        {
+          "id": "power-bi-visual",
+          "name": "Power BI Custom Visual",
+          "description": "A custom chart or visualization type inside Power BI reports. When the built-in charts do not show what you need, build your own visual that works with your organization's data.",
+          "cost": "free",
+          "costDetail": "Free to build, Power BI has free and paid tiers",
+          "complexity": "medium",
+          "bestFor": "Specialized data visualizations, custom report components",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "microsoft",
+            "data-viz",
+            "reports",
+            "work"
+          ]
+        },
+        {
+          "id": "salesforce-component",
+          "name": "Salesforce Lightning Component",
+          "description": "A custom component inside Salesforce CRM. Appears on record pages, dashboards, or as a standalone app. Built with Salesforce's Lightning Web Components framework.",
+          "cost": "free",
+          "costDetail": "Free to build, requires Salesforce org",
+          "complexity": "medium",
+          "bestFor": "CRM tools, customer dashboards, deal trackers, custom record views",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "salesforce",
+            "crm",
+            "work"
+          ]
+        },
+        {
+          "id": "hubspot-card",
+          "name": "HubSpot Custom Card",
+          "description": "A custom panel that appears on CRM records in HubSpot. Show enriched contact data, trigger workflows, or display information from external systems right inside the CRM record view.",
+          "cost": "free",
+          "costDetail": "Free to build, HubSpot has free CRM tier",
+          "complexity": "medium",
+          "bestFor": "Sales tools, contact enrichment, workflow triggers",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "hubspot",
+            "crm",
+            "work"
+          ]
+        },
+        {
+          "id": "jira-forge",
+          "name": "Jira Plugin (Forge)",
+          "description": "A custom panel, automation rule, or workflow step inside Jira. Built with Atlassian's Forge platform which handles hosting for you. Add custom fields, automations, or entirely new features.",
+          "cost": "free",
+          "costDetail": "Free to build and host on Forge",
+          "complexity": "medium",
+          "bestFor": "Issue tracking enhancements, workflow automation, custom reporting",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "atlassian",
+            "jira",
+            "project-management",
+            "work"
+          ]
+        },
+        {
+          "id": "confluence-macro",
+          "name": "Confluence Macro",
+          "description": "A custom content block inside Confluence wiki pages. Embed dynamic content, dashboards, data from external systems, or interactive tools right inside your team's documentation.",
+          "cost": "free",
+          "costDetail": "Free to build with Forge",
+          "complexity": "medium",
+          "bestFor": "Team dashboards in wiki pages, dynamic content, data displays",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "atlassian",
+            "confluence",
+            "wiki",
+            "work"
+          ]
+        },
+        {
+          "id": "airtable-extension",
+          "name": "Airtable Extension",
+          "description": "A custom panel inside Airtable bases. Extensions can visualize data, import/export from other services, add custom workflows, or build entirely new interfaces on top of Airtable's data.",
+          "cost": "free",
+          "costDetail": "Free to build, Airtable has free tier",
+          "complexity": "medium",
+          "bestFor": "Custom data views, workflow automation, import/export tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "airtable",
+            "database",
+            "work"
+          ]
+        },
+        {
+          "id": "retool",
+          "name": "Retool",
+          "description": "Drag-and-drop builder for internal tools. Connect to your database, API, or spreadsheet and build admin panels, dashboards, and CRUD interfaces in minutes. Meant for internal use, not public-facing apps.",
+          "cost": "free-tier",
+          "costDetail": "Free for up to 5 users",
+          "complexity": "low",
+          "bestFor": "Admin panels, ops dashboards, internal CRUD tools, data management",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "internal-tools",
+            "low-code",
+            "admin",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bots",
+      "label": "I want to communicate through a bot",
+      "icon": "🤖",
+      "vehicles": [
+        {
+          "id": "slack-bot",
+          "name": "Slack Bot",
+          "description": "A bot that lives in your Slack workspace. Can respond to commands (/standup), react to messages, post updates to channels, or have conversations in DMs. The #1 way to bring tools into where your team already communicates.",
+          "cost": "free",
+          "costDetail": "Free to build, deploy on free hosting",
+          "complexity": "medium",
+          "bestFor": "Team notifications, slash commands, approval workflows, Q&A bots",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": "slack-bot",
+          "example": null,
+          "tags": [
+            "slack",
+            "team",
+            "chat"
+          ]
+        },
+        {
+          "id": "teams-bot",
+          "name": "Teams Bot",
+          "description": "A bot inside Microsoft Teams. Responds to messages, handles commands, and can send proactive notifications. Part of the Teams App platform.",
+          "cost": "free",
+          "costDetail": "Free to build with Bot Framework",
+          "complexity": "medium",
+          "bestFor": "Enterprise team automations, help desks, internal Q&A",
+          "platform": [
+            "web",
+            "cross-platform"
+          ],
+          "promptTemplate": "teams-app",
+          "example": null,
+          "tags": [
+            "teams",
+            "enterprise",
+            "chat"
+          ]
+        },
+        {
+          "id": "discord-bot",
+          "name": "Discord Bot",
+          "description": "A bot for Discord servers. Can moderate, play games, answer questions, manage roles, post updates, or add custom commands. Huge Discord bot ecosystem means lots of examples to learn from.",
+          "cost": "free",
+          "costDetail": "Free to build, deploy on free hosting",
+          "complexity": "medium",
+          "bestFor": "Community tools, moderation, games, notifications",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "discord",
+            "community",
+            "chat"
+          ]
+        },
+        {
+          "id": "telegram-bot",
+          "name": "Telegram Bot",
+          "description": "A bot on Telegram. Surprisingly powerful — can handle payments, inline queries, custom keyboards, file sharing, and group administration. Simpler API than Slack or Discord.",
+          "cost": "free",
+          "costDetail": "Free, Telegram Bot API is free",
+          "complexity": "low",
+          "bestFor": "Personal automations, group tools, notifications, simple command interfaces",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "telegram",
+            "messaging",
+            "simple"
+          ]
+        },
+        {
+          "id": "whatsapp-bot",
+          "name": "WhatsApp Business Bot",
+          "description": "An automated responder on WhatsApp using the WhatsApp Business API (typically via Twilio). Can send messages, handle customer inquiries, and automate conversations on the world's most popular messaging platform.",
+          "cost": "free-tier",
+          "costDetail": "Twilio charges per message, free trial credits available",
+          "complexity": "medium",
+          "bestFor": "Customer-facing tools, reminders, notifications via WhatsApp",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "whatsapp",
+            "customer",
+            "messaging"
+          ]
+        },
+        {
+          "id": "email-tool",
+          "name": "Email-Based Tool",
+          "description": "A tool that works via email: send an email to a specific address, something happens, you get a response. Uses services like SendGrid, Mailgun, or cloud functions to process incoming email.",
+          "cost": "free-tier",
+          "costDetail": "SendGrid: 100 emails/day free",
+          "complexity": "medium",
+          "bestFor": "Workflows for people who live in email, document processing, automated responses",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "email",
+            "automation",
+            "async"
+          ]
+        },
+        {
+          "id": "sms-tool",
+          "name": "SMS-Based Tool",
+          "description": "A tool that works via text message. Text a number, get a response. Uses Twilio to send and receive SMS. Good for tools that need to reach people who are not at a computer.",
+          "cost": "free-tier",
+          "costDetail": "Twilio: pay-per-message (~\bash.01/msg), free trial credits",
+          "complexity": "medium",
+          "bestFor": "Notifications, two-way interactions via text, reaching non-tech users",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "sms",
+            "twilio",
+            "mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cli-distribution",
+      "label": "I want to distribute a CLI tool",
+      "icon": "⌨️",
+      "vehicles": [
+        {
+          "id": "npm-package",
+          "name": "NPM Package",
+          "description": "Publish your tool on NPM (the JavaScript package registry). Anyone can install it with one command: npm install -g your-tool. If it is a CLI tool, they type the command name and it runs.",
+          "cost": "free",
+          "costDetail": "Free to publish",
+          "complexity": "low",
+          "bestFor": "JavaScript/Node.js CLI tools, globally installable commands",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": "npm-package",
+          "example": {
+            "name": "CLI Noob Mode",
+            "url": null,
+            "repo": "https://github.com/dvelton/cli-noob-mode",
+            "note": "A Copilot CLI translation layer published as an NPM package"
+          },
+          "tags": [
+            "javascript",
+            "npm",
+            "cli"
+          ]
+        },
+        {
+          "id": "pypi-package",
+          "name": "PyPI Package",
+          "description": "Publish your Python tool on PyPI (the Python Package Index). Anyone can install it with: pip install your-tool. The Python equivalent of NPM.",
+          "cost": "free",
+          "costDetail": "Free to publish",
+          "complexity": "low",
+          "bestFor": "Python CLI tools, pip-installable libraries",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "python",
+            "pypi",
+            "cli"
+          ]
+        },
+        {
+          "id": "homebrew",
+          "name": "Homebrew Formula",
+          "description": "Add your tool to Homebrew, the Mac (and Linux) package manager. Users install with: brew install your-tool. The canonical way to distribute command-line tools on Mac.",
+          "cost": "free",
+          "costDetail": "Free, submit to homebrew-core or create a tap",
+          "complexity": "medium",
+          "bestFor": "Mac command-line tools, one-command installation",
+          "platform": [
+            "mac",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "homebrew",
+            "macos",
+            "cli"
+          ]
+        },
+        {
+          "id": "github-releases",
+          "name": "GitHub Releases",
+          "description": "Attach compiled binaries (executables) to a GitHub release. Users go to your repo, click Releases, download the right file for their OS, and run it. Simple, no package manager needed.",
+          "cost": "free",
+          "costDetail": "Free with any GitHub repo",
+          "complexity": "low",
+          "bestFor": "Distributing standalone executables, cross-platform binaries",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "github",
+            "binary",
+            "distribution"
+          ]
+        },
+        {
+          "id": "go-binary",
+          "name": "Go Binary",
+          "description": "Compile a Go program into a single file with zero dependencies. The resulting binary works on any matching OS without installing Go or any runtime. Cross-compile for Mac, Windows, and Linux from any platform.",
+          "cost": "free",
+          "costDetail": "Go is free and open source",
+          "complexity": "low",
+          "bestFor": "Cross-platform CLI tools that need to \"just work\" with no dependencies",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "go",
+            "binary",
+            "zero-dependency"
+          ]
+        },
+        {
+          "id": "shell-script",
+          "name": "Shell Script (curl | bash)",
+          "description": "Host a shell script on GitHub and let people install with one command: curl -sSL your-url | bash. Common for developer tools. Quick and dirty but effective for getting something installed fast.",
+          "cost": "free",
+          "costDetail": "Free, just a file on GitHub",
+          "complexity": "very-low",
+          "bestFor": "Quick installation scripts, developer tools, setup automations",
+          "platform": [
+            "mac",
+            "linux"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "shell",
+            "quick",
+            "installation"
+          ]
+        },
+        {
+          "id": "docker-image",
+          "name": "Docker Image",
+          "description": "Package your tool in a Docker container — a self-contained environment with everything it needs to run. Users install Docker, then run one command to start your tool. Guarantees it works the same everywhere.",
+          "cost": "free",
+          "costDetail": "Free to build and publish on Docker Hub",
+          "complexity": "medium",
+          "bestFor": "Tools with complex dependencies, consistent environments, server applications",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "docker",
+            "container",
+            "reproducible"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "share-data",
+      "label": "I want to share data or content",
+      "icon": "📊",
+      "vehicles": [
+        {
+          "id": "rss-feed",
+          "name": "RSS Feed",
+          "description": "An auto-updating content feed that anyone can subscribe to using a feed reader. When you publish something new, subscribers get it automatically. Old technology that still works great.",
+          "cost": "free",
+          "costDetail": "Just an XML file on any web server",
+          "complexity": "low",
+          "bestFor": "Publishing updates, blog feeds, content that people should follow",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "content",
+            "syndication",
+            "feed"
+          ]
+        },
+        {
+          "id": "github-readme-dashboard",
+          "name": "GitHub README Dashboard",
+          "description": "A README.md that auto-updates itself using GitHub Actions. The README becomes a live dashboard showing stats, status, or data that refreshes on a schedule. Your repo page becomes a display.",
+          "cost": "free",
+          "costDetail": "Free with GitHub Actions",
+          "complexity": "low",
+          "bestFor": "Live stats, status pages, automated data displays",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "github",
+            "dashboard",
+            "automated"
+          ]
+        },
+        {
+          "id": "github-gist",
+          "name": "GitHub Gist",
+          "description": "A shareable code snippet or small file hosted on GitHub. Create a gist, get a URL. Can contain multiple files, supports versioning, and can be embedded in other pages. Good for small, sharable tools.",
+          "cost": "free",
+          "costDetail": "Free, no repo needed",
+          "complexity": "very-low",
+          "bestFor": "Sharing scripts, configs, snippets, small standalone tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "github",
+            "snippet",
+            "sharing"
+          ]
+        },
+        {
+          "id": "json-api-pages",
+          "name": "JSON API on GitHub Pages",
+          "description": "Serve static JSON files from GitHub Pages as a read-only API. No server, no database — just JSON files that anyone can fetch. Update the data by pushing to the repo.",
+          "cost": "free",
+          "costDetail": "Free with GitHub Pages",
+          "complexity": "low",
+          "bestFor": "Simple read-only APIs, reference data, configuration endpoints",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "api",
+            "static",
+            "free"
+          ]
+        },
+        {
+          "id": "datasette",
+          "name": "Datasette",
+          "description": "Drop a SQLite database file in, get an instant web interface with search, filtering, JSON API, and data visualization. Turns any dataset into an explorable, queryable website.",
+          "cost": "free",
+          "costDetail": "Open source, deploy on free tiers",
+          "complexity": "medium",
+          "bestFor": "Making datasets explorable, data journalism, public data tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "data",
+            "sqlite",
+            "exploration"
+          ]
+        },
+        {
+          "id": "observable",
+          "name": "Observable Notebook",
+          "description": "An interactive data notebook on the web. Write analysis code, create visualizations, and publish it all as a live, interactive document that anyone can view, fork, and play with.",
+          "cost": "free-tier",
+          "costDetail": "Free for public notebooks",
+          "complexity": "medium",
+          "bestFor": "Data visualization, shareable analysis, interactive reports",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "data-viz",
+            "interactive",
+            "notebook"
+          ]
+        },
+        {
+          "id": "apps-script",
+          "name": "Google Apps Script",
+          "description": "Write code that runs inside Google Workspace — Sheets, Docs, Gmail, Calendar. Build custom functions, automate workflows, or create small web apps. Google's version of macros on steroids.",
+          "cost": "free",
+          "costDetail": "Free with any Google account",
+          "complexity": "low",
+          "bestFor": "Google Workspace automation, custom Sheets functions, lightweight web apps",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "google",
+            "automation",
+            "spreadsheet"
+          ]
+        },
+        {
+          "id": "sharepoint-site",
+          "name": "SharePoint Site",
+          "description": "An internal website for your Microsoft 365 organization. Can host pages, document libraries, lists, and custom web parts. The standard way to build intranet tools in Microsoft shops.",
+          "cost": "free",
+          "costDetail": "Included with Microsoft 365",
+          "complexity": "medium",
+          "bestFor": "Internal team tools, document hubs, intranet dashboards",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": {
+            "name": "SharePoint Site Builder",
+            "url": null,
+            "repo": "https://github.com/dvelton/sharepoint-site-builder",
+            "note": "A tool that creates SharePoint sites from plain-English descriptions"
+          },
+          "tags": [
+            "microsoft",
+            "intranet",
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "label": "I want something weird / creative / delightful",
+      "icon": "✨",
+      "vehicles": [
+        {
+          "id": "url-encoded-app",
+          "name": "URL-Encoded App",
+          "description": "Compress an entire application into a URL. The full app definition — code, config, everything — lives in the URL itself. Share the link, the app runs. No hosting, no server, no deployment. The URL is the app.",
+          "cost": "free",
+          "costDetail": "No hosting needed",
+          "complexity": "low",
+          "bestFor": "Shareable micro-tools, zero-hosting experiments",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": {
+            "name": "Promptapp Runner",
+            "url": "https://dvelton.github.io/promptapp-runner/",
+            "repo": "https://github.com/dvelton/promptapp-runner",
+            "note": "Entire AI micro-apps compressed into shareable URLs using LZ compression"
+          },
+          "tags": [
+            "creative",
+            "zero-hosting",
+            "delightful"
+          ]
+        },
+        {
+          "id": "qr-tool",
+          "name": "QR Code Tool",
+          "description": "A tool accessed by scanning a QR code. Print the code, stick it somewhere physical, and anyone with a phone camera can access your tool. Bridges the physical and digital worlds.",
+          "cost": "free",
+          "costDetail": "QR codes are free to generate",
+          "complexity": "very-low",
+          "bestFor": "Physical-world access to digital tools, conference materials, product info",
+          "platform": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "physical",
+            "mobile",
+            "creative",
+            "delightful"
+          ]
+        },
+        {
+          "id": "live-wallpaper",
+          "name": "Live Wallpaper",
+          "description": "A dynamic, animated wallpaper for your desktop or phone. Could display data visualizations, generative art, a live clock, weather, or anything that updates. Your desktop becomes an ambient display.",
+          "cost": "free",
+          "costDetail": "Various frameworks available",
+          "complexity": "medium",
+          "bestFor": "Ambient information displays, generative art, personalized desktops",
+          "platform": [
+            "mac",
+            "windows",
+            "android"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "ambient",
+            "art",
+            "desktop",
+            "delightful"
+          ]
+        },
+        {
+          "id": "touch-bar",
+          "name": "Touch Bar App",
+          "description": "Custom controls on the MacBook Pro Touch Bar (the light-up strip above the keyboard on certain models). Add buttons, sliders, or displays for quick actions and at-a-glance info.",
+          "cost": "free",
+          "costDetail": "Requires MacBook Pro with Touch Bar",
+          "complexity": "medium",
+          "bestFor": "Quick-access controls on MacBook Pro",
+          "platform": [
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "macos",
+            "hardware",
+            "delightful"
+          ]
+        },
+        {
+          "id": "apple-watch",
+          "name": "Apple Watch Complication",
+          "description": "A tiny widget on your watch face that shows a piece of data or provides a quick action. Glance at your wrist to see a stat, countdown, score, or status. The smallest possible UI for a tool.",
+          "cost": "free",
+          "costDetail": "Requires Apple Developer account and watchOS development",
+          "complexity": "high",
+          "bestFor": "At-a-glance data on your wrist, quick actions from the watch",
+          "platform": [
+            "ios"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "apple",
+            "wearable",
+            "tiny",
+            "delightful"
+          ]
+        },
+        {
+          "id": "alexa-skill",
+          "name": "Alexa Skill",
+          "description": "A voice-activated tool for Amazon Echo devices. \"Alexa, ask my tool to...\" Users interact with it entirely by voice. Good for hands-free scenarios (cooking, working out, driving).",
+          "cost": "free",
+          "costDetail": "Free to build and publish",
+          "complexity": "medium",
+          "bestFor": "Voice-activated tools, hands-free utilities, smart home integration",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "voice",
+            "alexa",
+            "smart-home",
+            "delightful"
+          ]
+        },
+        {
+          "id": "google-home",
+          "name": "Google Home Action",
+          "description": "A voice-activated tool for Google Home and Nest devices. \"Hey Google, talk to my tool.\" Similar to Alexa Skills but for Google's ecosystem.",
+          "cost": "free",
+          "costDetail": "Free to build",
+          "complexity": "medium",
+          "bestFor": "Voice-activated tools for Google device users",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "voice",
+            "google",
+            "smart-home"
+          ]
+        },
+        {
+          "id": "siri-shortcut",
+          "name": "Siri Shortcut",
+          "description": "A custom voice command for Siri on any Apple device. \"Hey Siri, run my tool.\" Can chain together actions, call APIs, process data, and produce results — all triggered by voice.",
+          "cost": "free",
+          "costDetail": "Built into Apple devices",
+          "complexity": "low",
+          "bestFor": "Voice-activated personal tools on Apple devices",
+          "platform": [
+            "ios",
+            "mac"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "apple",
+            "voice",
+            "siri",
+            "delightful"
+          ]
+        },
+        {
+          "id": "webhook",
+          "name": "Webhook Receiver",
+          "description": "A URL that listens for incoming data and does something with it. Other services \"ping\" your URL when something happens (a form is submitted, a payment is made, a file is uploaded). Your code processes it.",
+          "cost": "free",
+          "costDetail": "Free via Val Town, Cloudflare Workers, etc.",
+          "complexity": "low",
+          "bestFor": "Connecting external services to your logic, event-driven processing",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "api",
+            "event-driven",
+            "integration"
+          ]
+        },
+        {
+          "id": "github-app",
+          "name": "GitHub App",
+          "description": "An app that integrates with GitHub repositories and organizations. Can respond to events (new PR, new issue), make API calls, and automate workflows. Other people can install it on their repos.",
+          "cost": "free",
+          "costDetail": "Free to build and publish",
+          "complexity": "medium",
+          "bestFor": "Automating GitHub workflows, repo bots, CI/CD tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "github",
+            "automation",
+            "developer"
+          ]
+        },
+        {
+          "id": "figma-plugin",
+          "name": "Figma Plugin",
+          "description": "A tool inside Figma, the popular design tool. Can generate designs, modify layers, export assets, connect to data sources, or automate repetitive design tasks. Published on the Figma Community.",
+          "cost": "free",
+          "costDetail": "Free to build and publish",
+          "complexity": "medium",
+          "bestFor": "Design workflow tools, asset generators, data-driven design",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "design",
+            "figma",
+            "creative"
+          ]
+        },
+        {
+          "id": "fediverse-bot",
+          "name": "Bluesky / Mastodon Bot",
+          "description": "An automated account on decentralized social media. Post updates, respond to mentions, generate content, or aggregate information. Simpler APIs than legacy social platforms and no rate limit paywalls.",
+          "cost": "free",
+          "costDetail": "Free accounts, free APIs",
+          "complexity": "low",
+          "bestFor": "Automated posting, social media tools, data feeds",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "social",
+            "decentralized",
+            "bot"
+          ]
+        },
+        {
+          "id": "spotify-integration",
+          "name": "Spotify Integration",
+          "description": "Build tools that interact with Spotify's API: show what you're listening to, generate playlists, analyze your music taste, control playback, or create shareable music experiences.",
+          "cost": "free",
+          "costDetail": "Spotify API is free, some features require Premium",
+          "complexity": "medium",
+          "bestFor": "Music-related tools, listening analytics, playlist generators",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "music",
+            "spotify",
+            "api"
+          ]
+        },
+        {
+          "id": "calendar-tool",
+          "name": "Calendar Tool (.ics)",
+          "description": "Generate .ics calendar files that anyone can download and add to their calendar app. Create event invites, schedules, countdowns, or recurring events programmatically. Works with every calendar app.",
+          "cost": "free",
+          "costDetail": ".ics is an open standard",
+          "complexity": "low",
+          "bestFor": "Shareable schedules, event generators, deadline trackers",
+          "platform": [
+            "cross-platform"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "calendar",
+            "events",
+            "ics"
+          ]
+        },
+        {
+          "id": "pdf-generator",
+          "name": "PDF Generator",
+          "description": "A tool that creates downloadable PDF files on demand. Generate reports, certificates, invoices, formatted documents, or any printable output from your data.",
+          "cost": "free",
+          "costDetail": "Libraries like jsPDF and Puppeteer are free",
+          "complexity": "low",
+          "bestFor": "Reports, certificates, invoices, formatted documents",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "documents",
+            "print",
+            "output"
+          ]
+        },
+        {
+          "id": "new-tab-page",
+          "name": "Browser New Tab Page",
+          "description": "A custom page that appears every time you open a new browser tab. Build a personal dashboard, daily briefing, quick links, todo list, or inspirational display. You see it dozens of times a day.",
+          "cost": "free",
+          "costDetail": "Built as a Chrome/Firefox extension",
+          "complexity": "low",
+          "bestFor": "Personal dashboards, daily information, quick-access tools",
+          "platform": [
+            "web"
+          ],
+          "promptTemplate": null,
+          "example": null,
+          "tags": [
+            "browser",
+            "personal",
+            "dashboard",
+            "delightful"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZConfig — You built something. Now what?</title>
+    <meta name="description" content="120+ deployment vehicles for vibe coders. Find out how to get your AI-built tools to other people.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>EZ<span class="accent">Config</span></h1>
+            <p class="tagline">You built something with AI. Now what?</p>
+            <p class="subtitle">120+ ways to get your tools to other people — explained in plain English, with copy-paste prompts for any AI tool.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="scrollToQuiz()">Find Your Vehicle</button>
+                <button class="btn btn-secondary" onclick="scrollToCatalog()">Browse the Catalog</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>Find Your Vehicle</h2>
+            <p class="section-intro">Answer 3 quick questions and we'll narrow it down for you.</p>
+            
+            <div id="quiz-container">
+                <div id="quiz-step-1" class="quiz-step active">
+                    <h3>What did you build?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="website" onclick="quizSelect(1, 'website')">A website or web app</button>
+                        <button class="quiz-option" data-value="script" onclick="quizSelect(1, 'script')">A script or tool that runs locally</button>
+                        <button class="quiz-option" data-value="data" onclick="quizSelect(1, 'data')">Something that works with data</button>
+                        <button class="quiz-option" data-value="automation" onclick="quizSelect(1, 'automation')">An automation or workflow</button>
+                        <button class="quiz-option" data-value="unsure" onclick="quizSelect(1, 'unsure')">I'm not sure / something else</button>
+                    </div>
+                </div>
+
+                <div id="quiz-step-2" class="quiz-step">
+                    <h3>What do you want to do with it?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="share-web" onclick="quizSelect(2, 'share-web')">Share it as a website people can visit</button>
+                        <button class="quiz-option" data-value="share-app" onclick="quizSelect(2, 'share-app')">Make it a real app (desktop or phone)</button>
+                        <button class="quiz-option" data-value="share-team" onclick="quizSelect(2, 'share-team')">Use it inside a tool my team already uses (Slack, Teams, etc.)</button>
+                        <button class="quiz-option" data-value="automate" onclick="quizSelect(2, 'automate')">Run it automatically on a schedule</button>
+                        <button class="quiz-option" data-value="extend" onclick="quizSelect(2, 'extend')">Add it to an app I already use (browser, editor, launcher)</button>
+                        <button class="quiz-option" data-value="distribute" onclick="quizSelect(2, 'distribute')">Let people install and run it themselves</button>
+                    </div>
+                </div>
+
+                <div id="quiz-step-3" class="quiz-step">
+                    <h3>How much complexity are you comfortable with?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="minimal" onclick="quizSelect(3, 'minimal')">Keep it as simple as possible</button>
+                        <button class="quiz-option" data-value="moderate" onclick="quizSelect(3, 'moderate')">I can handle some setup steps</button>
+                        <button class="quiz-option" data-value="whatever" onclick="quizSelect(3, 'whatever')">Whatever it takes — I'll figure it out</button>
+                    </div>
+                </div>
+
+                <div id="quiz-results" class="quiz-step">
+                    <h3>Here's what we'd recommend</h3>
+                    <div id="quiz-results-list"></div>
+                    <button class="btn btn-secondary" onclick="resetQuiz()" style="margin-top: 1.5rem;">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+        <div class="container">
+            <h2>Full Catalog</h2>
+            <div class="catalog-controls">
+                <input type="text" id="search-input" placeholder="Search vehicles..." class="search-input" oninput="filterCatalog()">
+                <div class="filter-pills" id="filter-pills"></div>
+            </div>
+            <div id="catalog-grid"></div>
+        </div>
+    </section>
+
+    <section id="story" class="story-section">
+        <div class="container">
+            <h2>How I Got Here</h2>
+            <div class="story-content">
+                <p>I'm a lawyer. I peaked as a programmer in 2019 when I took a free Python course on Codecademy and built a dispute resolution tool. If you looked at the code today you'd probably call it a war crime.</p>
+
+                <p>Fast forward a few years and suddenly AI can write code for me while I point and say "no, more like this" until something works. I started building tools — little things at first, then bigger things. But I kept hitting the same wall: I'd build something on my laptop and then have no idea how to get it to anyone else.</p>
+
+                <p>The first unlock came from a coworker who said "just put it in a GitHub repo and deploy to Pages." I didn't know what that meant, but I tried it, and suddenly my little tools had URLs. I started ending my AI prompts with "and put it in a Pages web app and deploy it." It worked. I was dangerous.</p>
+
+                <p>Then I built a <a href="https://github.com/dvelton/hockey-shot-tracker" target="_blank">hockey shot tracker</a>. I'm a hockey parent — my son plays in a youth league, and the coaches were tracking shots on paper. I vibe-coded a simple web app where you tap on a rink diagram and it records where the shots came from. The team started using it. Then other coaches in the league started using it. It was the most rewarding thing I'd built, because people who weren't humoring me were actually choosing to use it.</p>
+
+                <p>But it was a static site. Data lived in the browser. Close the tab, lose your games. I wanted real accounts, real data persistence, season-long analytics. I was telling a coworker about it and he said: "Set up a free Neon database and hook it up to free Vercel hosting." I didn't know what either of those things were. But I tried it, and it worked, and suddenly I had a <a href="https://hockey-tracker-pro.vercel.app/login" target="_blank">real app with a real database and real user accounts</a>, running for free. That was the real unlock.</p>
+
+                <p>The code would make an actual engineer cry. The coaches don't care.</p>
+
+                <p>Every single vehicle I discovered was because someone happened to mention it. "Have you tried a menubar app?" "You know you can make a Chrome extension, right?" "That could be a PWA." Each time, a door I didn't know existed swung open.</p>
+
+                <p>That's why this project exists. Not everyone has a coworker who happens to know about Vercel, or menubar apps, or that you can compress an entire app into a URL. EZConfig is the coworker. It's every door I've found (and a lot of doors other people have found), listed in plain English, with a prompt you can paste into whatever AI tool you use to walk through it.</p>
+
+                <p>I can't write code. But I can tell you what it felt like to not know these things existed, and how much changed each time I found out.</p>
+
+                <p class="story-signature">— Dan Velton, lawyer and enthusiastic non-developer<br><a href="https://github.com/dvelton" target="_blank">github.com/dvelton</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>EZConfig is open source. <a href="https://github.com/dvelton/ezconfig" target="_blank">Contribute on GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

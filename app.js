@@ -252,6 +252,16 @@ async function openModal(vehicleId) {
         }
     }
 
+    let instructionsHtml = '';
+    if (v.instructions && v.instructions.length > 0) {
+        instructionsHtml = `<div class="instructions-section">
+            <h4>Getting Started</h4>
+            <ol class="instructions-list">
+                ${v.instructions.map(step => `<li>${escapeHtml(step)}</li>`).join('')}
+            </ol>
+        </div>`;
+    }
+
     document.getElementById('modal-content').innerHTML = `
         <h3>${v.name}</h3>
         <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">${v.categoryIcon} ${v.categoryLabel}</p>
@@ -261,6 +271,7 @@ async function openModal(vehicleId) {
         <div class="detail-row"><span class="detail-label">Best for</span><span class="detail-value">${v.bestFor}</span></div>
         <div class="detail-row"><span class="detail-label">Platform</span><span class="detail-value">${v.platform.join(', ')}</span></div>
         ${exampleHtml}
+        ${instructionsHtml}
         ${promptHtml}
     `;
 

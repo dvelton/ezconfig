@@ -444,6 +444,55 @@ a:hover {
     margin-bottom: 0.75rem;
 }
 
+.modal .instructions-section {
+    margin-top: 1.5rem;
+}
+
+.modal .instructions-section h4 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.instructions-list {
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+}
+
+.instructions-list li {
+    counter-increment: step;
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2.25rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--border);
+}
+
+.instructions-list li:last-child {
+    border-bottom: none;
+}
+
+.instructions-list li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--accent);
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .copy-prompt-btn {
     display: inline-flex;
     align-items: center;

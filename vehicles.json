@@ -46,6 +46,14 @@
             "static",
             "free",
             "edge"
+          ],
+          "instructions": [
+            "Create a free Cloudflare account at cloudflare.com",
+            "Go to Workers & Pages and click 'Create application'",
+            "Connect your GitHub repo (or drag and drop your files)",
+            "Cloudflare auto-detects your framework and builds it",
+            "Your site goes live at a .pages.dev URL",
+            "Optionally connect a custom domain"
           ]
         },
         {
@@ -65,6 +73,14 @@
             "static",
             "forms",
             "serverless"
+          ],
+          "instructions": [
+            "Create a free account at netlify.com",
+            "Click 'Add new site' and connect your GitHub repo",
+            "Netlify auto-detects your build settings",
+            "Your site deploys to a .netlify.app URL",
+            "For forms: add a 'netlify' attribute to any HTML form — submissions go to your Netlify dashboard",
+            "For serverless functions: add a netlify/functions folder with your function files"
           ]
         },
         {
@@ -84,6 +100,14 @@
             "react",
             "nextjs",
             "serverless"
+          ],
+          "instructions": [
+            "Create a free account at vercel.com",
+            "Click 'Add New Project' and import your GitHub repo",
+            "Vercel auto-detects your framework (React, Next.js, etc.)",
+            "Set any environment variables your project needs",
+            "Click Deploy — your site goes live at a .vercel.app URL",
+            "Every git push automatically redeploys"
           ]
         },
         {
@@ -103,6 +127,14 @@
             "static",
             "quick",
             "minimal"
+          ],
+          "instructions": [
+            "Install surge: npm install -g surge",
+            "Navigate to your project folder in the terminal",
+            "Run: surge",
+            "Enter your email and a password (first time only)",
+            "Choose a subdomain or accept the random one",
+            "Your site is live — that's it"
           ]
         },
         {
@@ -122,6 +154,13 @@
             "static",
             "indie",
             "creative"
+          ],
+          "instructions": [
+            "Create a free account at neocities.org",
+            "Upload your HTML, CSS, and JS files through the web dashboard",
+            "Your site is live at yourname.neocities.org",
+            "Edit files directly in the browser if you want",
+            "Optional: use the Neocities CLI for command-line uploads"
           ]
         },
         {
@@ -141,6 +180,14 @@
             "browser-ide",
             "collaborative",
             "prototyping"
+          ],
+          "instructions": [
+            "Go to glitch.com and click 'New Project'",
+            "Choose a starter template or import from GitHub",
+            "Edit code in the browser — changes go live instantly",
+            "Your app runs at yourproject.glitch.me",
+            "Share the URL or let others 'remix' (fork) your project",
+            "Note: free apps sleep after 5 minutes of inactivity"
           ]
         },
         {
@@ -160,6 +207,14 @@
             "browser-ide",
             "multi-language",
             "prototyping"
+          ],
+          "instructions": [
+            "Create a free account at replit.com",
+            "Click 'Create Repl' and choose your language",
+            "Paste or write your code in the browser editor",
+            "Click the Run button to test",
+            "Click Deploy to get a public URL",
+            "Share the link — others can also fork your Repl"
           ]
         }
       ]
@@ -231,6 +286,14 @@
             "full-stack",
             "one-click",
             "database"
+          ],
+          "instructions": [
+            "Create a free account at railway.app",
+            "Click 'New Project' and connect your GitHub repo",
+            "Railway auto-detects your app type and deploys",
+            "To add a database: click 'New' → 'Database' → choose Postgres/MySQL/Redis",
+            "Railway gives you a connection string — add it as an environment variable",
+            "Your app gets a .railway.app URL"
           ]
         },
         {
@@ -250,6 +313,14 @@
             "full-stack",
             "always-on",
             "managed"
+          ],
+          "instructions": [
+            "Create a free account at render.com",
+            "Click 'New' and choose Web Service, Static Site, or Background Worker",
+            "Connect your GitHub repo",
+            "Set build and start commands",
+            "For a database: create a new PostgreSQL instance from the dashboard",
+            "Your service gets a .onrender.com URL"
           ]
         },
         {
@@ -269,6 +340,14 @@
             "global",
             "docker",
             "edge"
+          ],
+          "instructions": [
+            "Install the Fly CLI: curl -L https://fly.io/install.sh | sh",
+            "Run: fly auth signup (or fly auth login)",
+            "In your project folder, run: fly launch",
+            "Follow the prompts to choose a region and app name",
+            "Run: fly deploy",
+            "Your app goes live at yourapp.fly.dev"
           ]
         },
         {
@@ -288,6 +367,14 @@
             "edge",
             "javascript",
             "serverless"
+          ],
+          "instructions": [
+            "Create a free account at dash.deno.com",
+            "Click 'New Project' and connect your GitHub repo",
+            "Choose your entry point file (e.g., main.ts)",
+            "Deploy — your app runs at yourproject.deno.dev",
+            "Every push to your repo triggers a new deployment",
+            "Supports TypeScript and npm packages natively"
           ]
         },
         {
@@ -307,6 +394,15 @@
             "edge",
             "serverless",
             "fast"
+          ],
+          "instructions": [
+            "Install Wrangler: npm install -g wrangler",
+            "Run: wrangler login",
+            "Run: wrangler init my-project",
+            "Write your worker code in src/index.ts",
+            "Test locally: wrangler dev",
+            "Deploy: wrangler deploy",
+            "Your worker runs at yourname.workers.dev"
           ]
         },
         {
@@ -326,6 +422,14 @@
             "serverless",
             "instant",
             "scripts"
+          ],
+          "instructions": [
+            "Sign up at val.town",
+            "Click 'New Val' and write your function",
+            "Your function instantly gets a URL endpoint",
+            "Call it from anywhere: fetch('https://yourname-yourval.web.val.run')",
+            "No deploy step — save and it's live",
+            "Add environment variables in Settings for API keys"
           ]
         },
         {
@@ -347,6 +451,15 @@
             "sqlite",
             "auth",
             "open-source"
+          ],
+          "instructions": [
+            "Download the PocketBase binary from pocketbase.io",
+            "Run: ./pocketbase serve",
+            "Open the admin UI at localhost:8090/_/",
+            "Create your collections (tables) using the visual editor",
+            "PocketBase auto-generates a REST API for your data",
+            "Connect your frontend using the PocketBase JavaScript SDK",
+            "For production: deploy the binary to Fly.io or any VPS"
           ]
         },
         {
@@ -369,6 +482,15 @@
             "realtime",
             "mobile",
             "hosting"
+          ],
+          "instructions": [
+            "Create a project at console.firebase.google.com",
+            "Install Firebase CLI: npm install -g firebase-tools",
+            "Run: firebase init (select the services you need)",
+            "For database: choose Firestore and create collections in the console",
+            "For auth: enable sign-in methods in Authentication settings",
+            "For hosting: run firebase deploy",
+            "Your site goes live at yourproject.web.app"
           ]
         },
         {
@@ -389,6 +511,15 @@
             "postgres",
             "auth",
             "realtime"
+          ],
+          "instructions": [
+            "Create a free project at supabase.com",
+            "Use the Table Editor to create your database tables",
+            "Go to Authentication → enable your preferred sign-in methods",
+            "Copy your project URL and anon key from Settings → API",
+            "Install the client: npm install @supabase/supabase-js",
+            "Connect from your frontend using the URL and key",
+            "Row Level Security policies control who can see what data"
           ]
         },
         {
@@ -408,6 +539,15 @@
             "sqlite",
             "edge",
             "database"
+          ],
+          "instructions": [
+            "Install the Turso CLI: brew install tursodatabase/tap/turso",
+            "Run: turso auth signup",
+            "Create a database: turso db create my-database",
+            "Get your connection URL: turso db show my-database --url",
+            "Create an auth token: turso db tokens create my-database",
+            "Use the @libsql/client npm package to connect from your app",
+            "Data replicates globally for fast reads everywhere"
           ]
         },
         {
@@ -427,6 +567,14 @@
             "redis",
             "serverless",
             "caching"
+          ],
+          "instructions": [
+            "Create a free account at upstash.com",
+            "Create a new Redis database from the console",
+            "Copy the REST URL and token",
+            "Install: npm install @upstash/redis",
+            "Use the REST client to get/set data from your app",
+            "For scheduled jobs: create a QStash topic and publish messages"
           ]
         }
       ]
@@ -455,6 +603,16 @@
             "cross-platform",
             "web-based",
             "desktop"
+          ],
+          "instructions": [
+            "Make sure Node.js is installed",
+            "Create a new folder and run: npm init -y",
+            "Install Electron: npm install electron --save-dev",
+            "Create main.js (loads your web app in a window) and index.html",
+            "Add a start script: \"electron .\"",
+            "Run: npm start to test locally",
+            "Install electron-builder to create distributable .dmg/.exe files",
+            "Run the build command to package your app"
           ]
         },
         {
@@ -476,6 +634,15 @@
             "lightweight",
             "rust",
             "desktop"
+          ],
+          "instructions": [
+            "Install Rust from rustup.rs",
+            "Install the Tauri CLI: cargo install tauri-cli",
+            "In your web project, run: cargo tauri init",
+            "Answer the prompts about your project",
+            "Run: cargo tauri dev (to test locally)",
+            "Run: cargo tauri build (to create a distributable app)",
+            "Output: .dmg for Mac, .msi for Windows, .deb/.AppImage for Linux"
           ]
         },
         {
@@ -496,6 +663,15 @@
             "macos",
             "utility",
             "delightful"
+          ],
+          "instructions": [
+            "Open Xcode (free from the Mac App Store)",
+            "Create a new macOS App project",
+            "Set the app to be an 'Agent' application (no dock icon)",
+            "Create an NSStatusItem for the menu bar icon",
+            "Build your dropdown view in SwiftUI",
+            "Run and test — the icon appears in your menu bar",
+            "To share: export an .app bundle from Xcode"
           ]
         },
         {
@@ -515,6 +691,14 @@
             "python",
             "macos",
             "utility"
+          ],
+          "instructions": [
+            "Install Python 3 if not already installed",
+            "Install rumps: pip install rumps",
+            "Create a Python file with your menu bar app logic",
+            "Use @rumps.clicked decorators for menu item actions",
+            "Run your script — the icon appears in the menu bar",
+            "Optional: use py2app to package as a standalone .app"
           ]
         },
         {
@@ -536,6 +720,15 @@
             "go",
             "desktop",
             "cross-platform"
+          ],
+          "instructions": [
+            "Install Go from go.dev",
+            "Install Wails: go install github.com/wailsapp/wails/v2/cmd/wails@latest",
+            "Create a new project: wails init -n myapp -t svelte (or react/vue)",
+            "Build your frontend in the frontend/ folder",
+            "Write Go backend code in app.go",
+            "Run: wails dev (for development)",
+            "Run: wails build (to create a distributable app)"
           ]
         },
         {
@@ -557,6 +750,15 @@
             "python",
             "executable",
             "distribution"
+          ],
+          "instructions": [
+            "Install PyInstaller: pip install pyinstaller",
+            "Navigate to your project folder",
+            "Run: pyinstaller --onefile your_script.py",
+            "Find your executable in the dist/ folder",
+            "Test it by running the executable directly",
+            "Share the executable — no Python installation needed to run it",
+            "For a Mac .app bundle: add the --windowed flag"
           ]
         },
         {
@@ -578,6 +780,14 @@
             "nodejs",
             "executable",
             "distribution"
+          ],
+          "instructions": [
+            "Install pkg: npm install -g pkg",
+            "Make sure your package.json has a 'bin' field pointing to your main script",
+            "Run: pkg . (builds for all platforms)",
+            "Or target specific platforms: pkg . --targets node18-macos-x64",
+            "Find executables in the output folder",
+            "Share — recipients don't need Node.js installed"
           ]
         },
         {
@@ -598,6 +808,15 @@
             "automation",
             "simple",
             "delightful"
+          ],
+          "instructions": [
+            "Open Script Editor (built into Mac, in Applications → Utilities)",
+            "Write your AppleScript",
+            "Go to File → Export",
+            "Change File Format to 'Application'",
+            "Save it wherever you want",
+            "Double-click the .app file to run it",
+            "Drag it to Applications folder if you want it permanently"
           ]
         },
         {
@@ -618,6 +837,15 @@
             "automation",
             "no-code",
             "delightful"
+          ],
+          "instructions": [
+            "Open Automator (built into Mac, in Applications)",
+            "Choose 'Application' as the document type",
+            "Drag actions from the library into your workflow",
+            "Common actions: Run Shell Script, Copy Files, Rename Finder Items",
+            "Click Run to test",
+            "Save — it becomes a .app you can double-click",
+            "Drag it to your dock or Applications folder"
           ]
         },
         {
@@ -638,6 +866,15 @@
             "creative",
             "ambient",
             "delightful"
+          ],
+          "instructions": [
+            "Open Xcode and create a new project",
+            "Choose the Screen Saver template",
+            "Implement your drawing code in the ScreenSaverView subclass",
+            "Build the project — it outputs a .saver file",
+            "Double-click the .saver file to install it",
+            "Go to System Settings → Screen Saver to select it",
+            "Share the .saver file for others to install"
           ]
         },
         {
@@ -658,6 +895,14 @@
             "widget",
             "glanceable",
             "delightful"
+          ],
+          "instructions": [
+            "Open Xcode and create a new project (or add a Widget Extension to existing)",
+            "Choose the Widget Extension template",
+            "Define your timeline entries (what data to show and when to refresh)",
+            "Build the widget view in SwiftUI",
+            "Run on your Mac to test",
+            "Widget appears in Notification Center and on the desktop"
           ]
         },
         {
@@ -677,6 +922,14 @@
             "windows",
             "utility",
             "tray"
+          ],
+          "instructions": [
+            "Choose your framework: .NET (WinForms), Electron, or Python (pystray)",
+            "Create a system tray icon using NotifyIcon (.NET) or equivalent",
+            "Add a context menu with your actions",
+            "Handle click events for each menu item",
+            "Set the app to run at startup if desired (add to registry or Startup folder)",
+            "Package as an installer using NSIS, Inno Setup, or similar"
           ]
         }
       ]
@@ -705,6 +958,15 @@
             "mobile",
             "offline",
             "installable"
+          ],
+          "instructions": [
+            "Add a manifest.json to your project with app name, icons, and display settings",
+            "Create a service worker file for offline caching",
+            "Add <link rel='manifest' href='manifest.json'> to your HTML",
+            "Add iOS meta tags: apple-mobile-web-app-capable, status-bar-style",
+            "Generate app icons in required sizes (192x192, 512x512 minimum)",
+            "Deploy to any HTTPS host",
+            "Test: open on your phone and look for the 'Add to Home Screen' option"
           ]
         },
         {
@@ -725,6 +987,15 @@
             "native",
             "javascript",
             "mobile"
+          ],
+          "instructions": [
+            "Install Node.js and the Expo CLI: npx create-expo-app my-app",
+            "Navigate into the folder and run: npx expo start",
+            "Scan the QR code with your phone to preview (install Expo Go app first)",
+            "Build your screens using React Native components",
+            "For iOS builds: run npx expo build:ios (needs Apple Developer account)",
+            "For Android: run npx expo build:android",
+            "Submit to App Store / Google Play from the Expo dashboard"
           ]
         },
         {
@@ -745,6 +1016,15 @@
             "hybrid",
             "web-to-native",
             "mobile"
+          ],
+          "instructions": [
+            "Install Capacitor in your web project: npm install @capacitor/core @capacitor/cli",
+            "Initialize: npx cap init",
+            "Build your web app: npm run build",
+            "Add platforms: npx cap add ios && npx cap add android",
+            "Sync your built files: npx cap sync",
+            "Open in Xcode: npx cap open ios (or Android Studio: npx cap open android)",
+            "Build and run on your device from the native IDE"
           ]
         },
         {
@@ -764,6 +1044,15 @@
             "ios",
             "testing",
             "distribution"
+          ],
+          "instructions": [
+            "Build your iOS app in Xcode",
+            "Create an App Store Connect record at appstoreconnect.apple.com",
+            "Archive your app in Xcode (Product → Archive)",
+            "Upload the archive to App Store Connect",
+            "Add testers by email (up to 10,000 external testers)",
+            "Testers get a link to install your app via the TestFlight app",
+            "No App Store review needed for internal testers"
           ]
         },
         {
@@ -785,6 +1074,15 @@
             "no-code",
             "automation",
             "delightful"
+          ],
+          "instructions": [
+            "Open the Shortcuts app on your iPhone, iPad, or Mac",
+            "Tap the + button to create a new shortcut",
+            "Search for and add actions (e.g., Get Contents of URL, Show Result)",
+            "Chain actions together — output of one feeds into the next",
+            "Give it a name and icon",
+            "Add to Home Screen for one-tap access",
+            "Say 'Hey Siri, [shortcut name]' to run it by voice"
           ]
         },
         {
@@ -805,6 +1103,14 @@
             "javascript",
             "widgets",
             "delightful"
+          ],
+          "instructions": [
+            "Install Scriptable from the App Store (free)",
+            "Open the app and tap + to create a new script",
+            "Write JavaScript using Scriptable's APIs (web requests, notifications, etc.)",
+            "For a home screen widget: implement the widget API and add as iOS widget",
+            "Share scripts via iCloud links",
+            "Scripts can also be triggered from Shortcuts app"
           ]
         }
       ]
@@ -850,6 +1156,14 @@
             "ai",
             "github",
             "automation"
+          ],
+          "instructions": [
+            "Create a .md file in your .github/workflows/ directory",
+            "Add frontmatter with name, description, on (trigger), and permissions",
+            "Write natural language instructions for what the agent should do",
+            "The agent reads your repo context and acts accordingly",
+            "Triggered by events you specify (issue opened, PR created, schedule, etc.)",
+            "Check the Actions tab to see runs and results"
           ]
         },
         {
@@ -869,6 +1183,14 @@
             "scheduled",
             "cloud",
             "recurring"
+          ],
+          "instructions": [
+            "Choose a hosting provider with cron support (Railway, Render, Fly.io)",
+            "Create your script that does the recurring work",
+            "Deploy the script to your chosen provider",
+            "Configure the cron schedule in the provider's dashboard or config file",
+            "Common format: '0 9 * * *' means daily at 9am UTC",
+            "Check logs in the provider's dashboard to verify it's running"
           ]
         },
         {
@@ -888,6 +1210,15 @@
             "macos",
             "background",
             "local"
+          ],
+          "instructions": [
+            "Create a .plist file describing your scheduled task",
+            "Save it in ~/Library/LaunchAgents/",
+            "Key fields: Label, ProgramArguments, StartInterval or StartCalendarInterval",
+            "Load it: launchctl load ~/Library/LaunchAgents/your-agent.plist",
+            "Check it's running: launchctl list | grep your-label",
+            "View logs in Console.app or redirect stdout/stderr in the plist",
+            "To stop: launchctl unload the plist file"
           ]
         },
         {
@@ -907,6 +1238,15 @@
             "no-code",
             "integration",
             "automation"
+          ],
+          "instructions": [
+            "Create a free account at zapier.com",
+            "Click 'Create Zap'",
+            "Choose your trigger app and event (e.g., 'New Form Submission in Google Forms')",
+            "Connect your account for that app",
+            "Choose your action app and event (e.g., 'Send Message in Slack')",
+            "Map the data fields from trigger to action",
+            "Test the Zap, then turn it on"
           ]
         },
         {
@@ -926,6 +1266,15 @@
             "visual",
             "automation",
             "integration"
+          ],
+          "instructions": [
+            "Create a free account at make.com",
+            "Click 'Create a new scenario'",
+            "Add modules by clicking the + icon on the canvas",
+            "Connect your apps and configure each module",
+            "Draw connections between modules to define the flow",
+            "Use filters and routers for conditional logic",
+            "Run once to test, then activate the scenario"
           ]
         },
         {
@@ -946,6 +1295,15 @@
             "self-hosted",
             "open-source",
             "automation"
+          ],
+          "instructions": [
+            "Install n8n: npm install -g n8n (or use Docker)",
+            "Run: n8n start",
+            "Open the editor at localhost:5678",
+            "Add nodes by clicking + and searching for your apps",
+            "Connect nodes to define the workflow",
+            "Click 'Execute Workflow' to test",
+            "Activate the workflow to run it automatically"
           ]
         },
         {
@@ -967,6 +1325,15 @@
             "simple",
             "smart-home",
             "automation"
+          ],
+          "instructions": [
+            "Create a free account at ifttt.com",
+            "Click 'Create' to make a new Applet",
+            "Click 'If This' and choose your trigger service and event",
+            "Click 'Then That' and choose your action service and event",
+            "Configure the action details",
+            "Click 'Continue' and 'Finish'",
+            "The Applet runs automatically when triggered"
           ]
         },
         {
@@ -986,6 +1353,15 @@
             "windows",
             "scheduled",
             "local"
+          ],
+          "instructions": [
+            "Open Task Scheduler from the Start menu",
+            "Click 'Create Basic Task'",
+            "Give it a name and description",
+            "Choose the trigger: daily, weekly, at startup, etc.",
+            "Choose 'Start a program' as the action",
+            "Browse to your script or executable",
+            "Click Finish — the task will run on schedule"
           ]
         },
         {
@@ -1005,6 +1381,15 @@
             "serverless",
             "scheduled",
             "simple"
+          ],
+          "instructions": [
+            "Sign up at val.town",
+            "Create a new Val",
+            "Write your function",
+            "Click the schedule icon (clock) next to the Val name",
+            "Choose your interval: every minute, hour, day, etc.",
+            "Save — the Val will now run on that schedule",
+            "Check the Runs tab to see execution history"
           ]
         }
       ]
@@ -1031,6 +1416,16 @@
             "browser",
             "chrome",
             "productivity"
+          ],
+          "instructions": [
+            "Create a folder for your extension",
+            "Create manifest.json with name, version, and permissions",
+            "Add your HTML/CSS/JS files (popup, content scripts, background script)",
+            "Open chrome://extensions in Chrome",
+            "Enable 'Developer mode' (top right toggle)",
+            "Click 'Load unpacked' and select your extension folder",
+            "Test it — click your icon in the toolbar",
+            "To publish: pay $5 one-time fee at chrome.google.com/webstore/devconsole"
           ]
         },
         {
@@ -1050,6 +1445,15 @@
             "browser",
             "firefox",
             "privacy"
+          ],
+          "instructions": [
+            "Create a folder with manifest.json (WebExtension format)",
+            "Add your HTML/CSS/JS files",
+            "Open about:debugging in Firefox",
+            "Click 'This Firefox' → 'Load Temporary Add-on'",
+            "Select your manifest.json",
+            "Test your extension",
+            "To publish: submit at addons.mozilla.org (free, reviewed by Mozilla)"
           ]
         },
         {
@@ -1070,6 +1474,14 @@
             "browser",
             "safari",
             "apple"
+          ],
+          "instructions": [
+            "Open Xcode and create a new Safari Extension App project",
+            "Move your extension code (manifest, scripts) into the Extension folder",
+            "Build and run in Xcode",
+            "Enable in Safari: Preferences → Extensions",
+            "Test on Mac, then enable for iOS too (same extension works on both)",
+            "Distribute via the Mac App Store"
           ]
         },
         {
@@ -1090,6 +1502,15 @@
             "no-install",
             "browser",
             "delightful"
+          ],
+          "instructions": [
+            "Write your JavaScript as a single function",
+            "Wrap it: javascript:(function(){ /* your code */ })()",
+            "Create a new bookmark in your browser",
+            "Paste the javascript: URL as the bookmark URL",
+            "Name it something descriptive",
+            "Click the bookmark on any page to run it",
+            "Share by giving others the javascript: URL to save as a bookmark"
           ]
         },
         {
@@ -1109,6 +1530,14 @@
             "browser",
             "customization",
             "automation"
+          ],
+          "instructions": [
+            "Install Tampermonkey extension in your browser (free)",
+            "Click the Tampermonkey icon → 'Create a new script'",
+            "Add @match metadata to specify which sites it runs on",
+            "Write your JavaScript to modify the page",
+            "Save the script — it runs automatically on matching sites",
+            "Share by publishing on Greasy Fork (greasyfork.org) or sharing the .user.js file"
           ]
         },
         {
@@ -1128,6 +1557,14 @@
             "browser",
             "chrome",
             "panel"
+          ],
+          "instructions": [
+            "Create a Chrome extension with manifest.json (Manifest V3)",
+            "Add 'side_panel' permission and 'sidePanel' field in manifest",
+            "Create the side panel HTML page",
+            "Use chrome.sidePanel API to control the panel",
+            "Load unpacked in chrome://extensions to test",
+            "The panel slides out from the right side of the browser"
           ]
         }
       ]
@@ -1154,6 +1591,14 @@
             "ai",
             "copilot",
             "terminal"
+          ],
+          "instructions": [
+            "Create a folder for your skill",
+            "Create a SKILL.md file with frontmatter (name, description)",
+            "Write instructions in the SKILL.md body — this is what Copilot reads",
+            "Add any data files or templates the skill needs",
+            "Copy the skill folder to ~/.copilot/skills/ (or your project's .github/skills/)",
+            "Invoke in Copilot CLI by name"
           ]
         },
         {
@@ -1178,6 +1623,14 @@
             "ai",
             "protocol",
             "integration"
+          ],
+          "instructions": [
+            "Install the MCP SDK: npm install @modelcontextprotocol/sdk",
+            "Create a server file that defines your tools and resources",
+            "Each tool needs: name, description, input schema, and handler function",
+            "Test locally: run the server and connect from your AI tool",
+            "For Copilot CLI: add the server to your MCP config file",
+            "For distribution: publish as an NPM package or Docker image"
           ]
         },
         {
@@ -1198,6 +1651,15 @@
             "ai",
             "copilot",
             "chat"
+          ],
+          "instructions": [
+            "Go to github.com/settings/apps and create a new GitHub App",
+            "Enable Copilot Extension features in the app settings",
+            "Set up your endpoint URL (where Copilot sends messages)",
+            "Implement the Copilot Extensions API to handle chat messages",
+            "Deploy your endpoint (Vercel, Cloudflare Workers, etc.)",
+            "Install the app on your account or organization",
+            "Users @mention your extension in Copilot Chat"
           ]
         },
         {
@@ -1217,6 +1679,14 @@
             "ai",
             "no-code",
             "chatgpt"
+          ],
+          "instructions": [
+            "Go to chat.openai.com and click your name → 'My GPTs' → 'Create a GPT'",
+            "Give it a name, description, and instructions",
+            "Upload any reference documents (PDFs, text files)",
+            "Add conversation starters (example questions)",
+            "Configure capabilities (web browsing, code interpreter, etc.)",
+            "Click Save — share via link or publish to the GPT Store"
           ]
         },
         {
@@ -1236,6 +1706,14 @@
             "ai",
             "no-code",
             "claude"
+          ],
+          "instructions": [
+            "Go to claude.ai and click 'Projects' in the sidebar",
+            "Create a new project",
+            "Add custom instructions that tell Claude about your domain",
+            "Upload reference documents (PDFs, text files, code)",
+            "Start a conversation — Claude uses your docs and instructions as context",
+            "Share the project with team members if on a Team plan"
           ]
         },
         {
@@ -1255,6 +1733,15 @@
             "editor",
             "vscode",
             "developer"
+          ],
+          "instructions": [
+            "Install Node.js and Yeoman: npm install -g yo generator-code",
+            "Run: yo code (choose your extension type)",
+            "Edit the generated code in VS Code",
+            "Press F5 to launch a test instance of VS Code with your extension",
+            "Define commands, views, or other contributions in package.json",
+            "Package: npx vsce package",
+            "Publish: npx vsce publish (create a publisher at marketplace.visualstudio.com first)"
           ]
         },
         {
@@ -1274,6 +1761,15 @@
             "notes",
             "knowledge",
             "markdown"
+          ],
+          "instructions": [
+            "Clone the Obsidian sample plugin from GitHub",
+            "Edit main.ts to add your plugin logic",
+            "Build: npm run build",
+            "Copy main.js and manifest.json to your vault's .obsidian/plugins/your-plugin/ folder",
+            "Enable the plugin in Obsidian Settings → Community Plugins",
+            "Test your plugin functionality",
+            "To publish: submit to the Obsidian community plugins list on GitHub"
           ]
         },
         {
@@ -1293,6 +1789,14 @@
             "notion",
             "api",
             "productivity"
+          ],
+          "instructions": [
+            "Go to notion.so/my-integrations and create a new integration",
+            "Give it a name and select capabilities (read/write content, etc.)",
+            "Copy your integration token",
+            "Share your Notion database/page with the integration (click Share → invite)",
+            "Use the Notion API (or @notionhq/client npm package) to read/write data",
+            "Common operations: query databases, create pages, update properties"
           ]
         },
         {
@@ -1313,6 +1817,15 @@
             "launcher",
             "keyboard",
             "delightful"
+          ],
+          "instructions": [
+            "Install Raycast (free) from raycast.com",
+            "Open Raycast and run 'Create Extension'",
+            "Choose a template (List, Form, Detail, etc.)",
+            "Edit the TypeScript/React code in your editor",
+            "Raycast auto-reloads as you save changes",
+            "Test by triggering your command in Raycast",
+            "Publish to the Raycast Store: submit via GitHub PR"
           ]
         },
         {
@@ -1332,6 +1845,15 @@
             "macos",
             "launcher",
             "keyboard"
+          ],
+          "instructions": [
+            "Open Alfred Preferences → Workflows",
+            "Click + to create a new blank workflow",
+            "Add a trigger (keyword, hotkey, or file action)",
+            "Add actions (run script, open URL, show notification, etc.)",
+            "Connect triggers to actions by dragging between them",
+            "Test by invoking your keyword in Alfred",
+            "Share: right-click the workflow → Export"
           ]
         },
         {
@@ -1353,6 +1875,15 @@
             "physical",
             "shortcuts",
             "delightful"
+          ],
+          "instructions": [
+            "Install the Stream Deck SDK from Elgato's developer site",
+            "Create a new plugin project using their template",
+            "Define your action in the manifest (icon, name, tooltip)",
+            "Write the plugin logic in JavaScript",
+            "Build and install the plugin for testing",
+            "Assign the action to a button in the Stream Deck app",
+            "Distribute via Elgato's Marketplace or share the plugin file"
           ]
         },
         {
@@ -1373,6 +1904,14 @@
             "text",
             "utility",
             "delightful"
+          ],
+          "instructions": [
+            "Create a .popclipext folder with a Config.plist file",
+            "Define your extension: name, icon, and action type",
+            "For a script action: add a shell script or AppleScript",
+            "For a URL action: define a URL template with {popclip text} placeholder",
+            "Double-click the .popclipext folder to install",
+            "Select text anywhere — your action appears in the PopClip bar"
           ]
         },
         {
@@ -1392,6 +1931,15 @@
             "macos",
             "input",
             "customization"
+          ],
+          "instructions": [
+            "Install BetterTouchTool from folivora.ai",
+            "Open BetterTouchTool preferences",
+            "Choose your input device (Touch Bar, trackpad, keyboard, etc.)",
+            "Click + to add a new trigger",
+            "Choose the trigger type (gesture, key combo, etc.)",
+            "Assign an action (run script, open app, keystroke, etc.)",
+            "For Touch Bar: design custom widgets with text, icons, and scripts"
           ]
         },
         {
@@ -1411,6 +1959,15 @@
             "macos",
             "automation",
             "power-user"
+          ],
+          "instructions": [
+            "Install Keyboard Maestro from keyboardmaestro.com",
+            "Create a new macro",
+            "Set a trigger (hotkey, application launch, time, USB device, etc.)",
+            "Add actions from the extensive library (type text, click, run script, etc.)",
+            "Chain actions together for complex multi-step workflows",
+            "Test with the 'Try' button",
+            "Macros can be shared as exported files"
           ]
         }
       ]
@@ -1440,6 +1997,15 @@
             "word",
             "documents",
             "work"
+          ],
+          "instructions": [
+            "Install Node.js and the Yeoman generator: npm install -g yo generator-office",
+            "Run: yo office (choose Word Add-in, then your framework)",
+            "A new project is created with a task pane that opens in Word",
+            "Edit the task pane HTML/JS to add your functionality",
+            "Run: npm start (sideloads the add-in in Word for testing)",
+            "Use the Office.js API to read/modify document content",
+            "To share: deploy the web app and distribute the manifest XML"
           ]
         },
         {
@@ -1462,6 +2028,15 @@
             "excel",
             "spreadsheet",
             "work"
+          ],
+          "instructions": [
+            "Install Node.js and run: npm install -g yo generator-office",
+            "Run: yo office (choose Excel Add-in)",
+            "Edit the task pane to add your custom functions or UI",
+            "For custom functions: add them in the functions/ folder",
+            "Run: npm start to test in Excel",
+            "Custom functions appear in Excel as =YOURFUNCTION()",
+            "Deploy the web files and share the manifest for distribution"
           ]
         },
         {
@@ -1484,6 +2059,14 @@
             "powerpoint",
             "presentations",
             "work"
+          ],
+          "instructions": [
+            "Run: yo office (choose PowerPoint Add-in)",
+            "Edit the task pane code for your functionality",
+            "Use the Office.js API to create slides, add shapes, modify text",
+            "Run: npm start to sideload in PowerPoint",
+            "Test your add-in features",
+            "Deploy and distribute via your organization's app catalog or AppSource"
           ]
         },
         {
@@ -1506,6 +2089,14 @@
             "outlook",
             "email",
             "work"
+          ],
+          "instructions": [
+            "Run: yo office (choose Outlook Add-in)",
+            "Choose when your add-in appears: reading email, composing, or both",
+            "Edit the task pane for your email-related tools",
+            "Use Office.js to read email headers, body, attachments",
+            "Run: npm start to test in Outlook",
+            "Deploy and distribute via admin center or AppSource"
           ]
         },
         {
@@ -1529,6 +2120,15 @@
             "teams",
             "collaboration",
             "work"
+          ],
+          "instructions": [
+            "Install Teams Toolkit extension in VS Code",
+            "Run 'Teams: Create a New App' from the command palette",
+            "Choose your app type: tab, bot, message extension, or workflow bot",
+            "Edit the generated code for your functionality",
+            "Press F5 to test locally in Teams",
+            "Use the Teams Toolkit to deploy to Azure (free tier)",
+            "Publish to your org or the Teams App Store"
           ]
         },
         {
@@ -1548,6 +2148,14 @@
             "google",
             "spreadsheet",
             "work"
+          ],
+          "instructions": [
+            "Open a Google Sheet and go to Extensions → Apps Script",
+            "Write your functions (custom formulas start with function, UI uses SpreadsheetApp)",
+            "For a sidebar: use HtmlService to create HTML content",
+            "For custom menu: use onOpen() to add menu items",
+            "Test from the Apps Script editor (Run button)",
+            "To distribute: publish from the Apps Script editor → Deploy → Test deployments"
           ]
         },
         {
@@ -1567,6 +2175,14 @@
             "google",
             "documents",
             "work"
+          ],
+          "instructions": [
+            "Open a Google Doc and go to Extensions → Apps Script",
+            "Write functions using DocumentApp to read/modify the document",
+            "Add a custom menu using onOpen()",
+            "Create a sidebar with HtmlService if you need a UI",
+            "Test from the Apps Script editor",
+            "Publish as a Google Workspace Add-on for distribution"
           ]
         },
         {
@@ -1586,6 +2202,14 @@
             "google",
             "presentations",
             "work"
+          ],
+          "instructions": [
+            "Open Google Slides and go to Extensions → Apps Script",
+            "Use SlidesApp to create and modify slides programmatically",
+            "Add custom menus for your tools",
+            "Use HTML service for any complex UI",
+            "Test from the script editor",
+            "Publish as a Workspace Add-on"
           ]
         },
         {
@@ -1606,6 +2230,15 @@
             "microsoft",
             "intranet",
             "work"
+          ],
+          "instructions": [
+            "Install Node.js and the SharePoint Framework (SPFx) generator",
+            "Run: yo @microsoft/sharepoint",
+            "Choose 'WebPart' and your preferred framework (React, etc.)",
+            "Edit the web part code to display your content",
+            "Test locally: gulp serve (opens a workbench page)",
+            "Package: gulp bundle && gulp package-solution",
+            "Upload the .sppkg file to your SharePoint App Catalog"
           ]
         },
         {
@@ -1626,6 +2259,15 @@
             "no-code",
             "automation",
             "work"
+          ],
+          "instructions": [
+            "Go to make.powerautomate.com",
+            "Click 'Create' and choose your flow type (Automated, Instant, or Scheduled)",
+            "Search for your trigger (e.g., 'When an item is created' in SharePoint)",
+            "Add action steps (send email, create Teams message, update Excel, etc.)",
+            "Configure each step with your specific details",
+            "Test the flow with the 'Test' button",
+            "Save and turn on — it runs automatically"
           ]
         },
         {
@@ -1648,6 +2290,15 @@
             "low-code",
             "mobile",
             "work"
+          ],
+          "instructions": [
+            "Go to make.powerapps.com",
+            "Click 'Create' → choose Canvas App (for custom layout) or Model-driven (for data-first)",
+            "Connect to your data source (SharePoint, Excel, SQL, etc.)",
+            "Drag and drop controls onto the canvas",
+            "Set formulas to connect controls to data",
+            "Preview with the Play button",
+            "Share the app with your team — they can open it in Teams or a browser"
           ]
         },
         {
@@ -1668,6 +2319,15 @@
             "data-viz",
             "reports",
             "work"
+          ],
+          "instructions": [
+            "Install Node.js and the Power BI Visual Tools: npm install -g powerbi-visuals-tools",
+            "Create a new visual: pbiviz new my-visual",
+            "Edit the visual code in src/visual.ts",
+            "Define capabilities in capabilities.json (what data it accepts)",
+            "Test: pbiviz start (opens a test page in your browser)",
+            "Package: pbiviz package",
+            "Import the .pbiviz file into your Power BI reports"
           ]
         },
         {
@@ -1687,6 +2347,15 @@
             "salesforce",
             "crm",
             "work"
+          ],
+          "instructions": [
+            "Set up a Salesforce Developer Edition org (free) at developer.salesforce.com",
+            "Install Salesforce CLI: npm install -g @salesforce/cli",
+            "Create a new Lightning Web Component: sf generate component -n myComponent",
+            "Edit the HTML, JS, and metadata XML files",
+            "Deploy: sf project deploy start",
+            "Add the component to a Lightning App Page in the App Builder",
+            "Drag it onto the page and save"
           ]
         },
         {
@@ -1706,6 +2375,15 @@
             "hubspot",
             "crm",
             "work"
+          ],
+          "instructions": [
+            "Create a developer account at developers.hubspot.com",
+            "Create a new app in your developer account",
+            "Define a CRM card in your app settings",
+            "Set up the data fetch URL (your API endpoint)",
+            "Your endpoint returns the card content as JSON",
+            "Install the app on a HubSpot portal",
+            "The card appears on CRM records (contacts, deals, etc.)"
           ]
         },
         {
@@ -1726,6 +2404,15 @@
             "jira",
             "project-management",
             "work"
+          ],
+          "instructions": [
+            "Install the Forge CLI: npm install -g @forge/cli",
+            "Create a new app: forge create",
+            "Choose your template (e.g., jira-issue-panel, jira-dashboard-gadget)",
+            "Edit the resolver and UI code",
+            "Deploy: forge deploy",
+            "Install on your Jira site: forge install",
+            "Your app appears in the configured location (issue panel, dashboard, etc.)"
           ]
         },
         {
@@ -1746,6 +2433,15 @@
             "confluence",
             "wiki",
             "work"
+          ],
+          "instructions": [
+            "Install the Forge CLI: npm install -g @forge/cli",
+            "Create a new app: forge create (choose Confluence macro template)",
+            "Edit the macro code to render your content",
+            "Deploy: forge deploy",
+            "Install: forge install",
+            "In Confluence, type /your-macro-name to insert it into a page",
+            "Configure macro settings that editors can customize"
           ]
         },
         {
@@ -1765,6 +2461,15 @@
             "airtable",
             "database",
             "work"
+          ],
+          "instructions": [
+            "Open your Airtable base and click 'Extensions' in the toolbar",
+            "Click 'Build a custom extension'",
+            "Set up your development environment with the Airtable Blocks SDK",
+            "Write React components for your extension's UI",
+            "Use the SDK to read/write data from the base",
+            "Test in the development server",
+            "Release to make it available to base collaborators"
           ]
         },
         {
@@ -1785,6 +2490,15 @@
             "low-code",
             "admin",
             "work"
+          ],
+          "instructions": [
+            "Create a free account at retool.com",
+            "Click 'Create new' → choose App",
+            "Connect your data source (database, API, Google Sheets, etc.)",
+            "Drag and drop components (tables, forms, buttons, charts)",
+            "Write queries to pull data and connect them to components",
+            "Add event handlers for button clicks and form submissions",
+            "Share with your team — they access it via a Retool URL"
           ]
         }
       ]
@@ -1811,6 +2525,16 @@
             "slack",
             "team",
             "chat"
+          ],
+          "instructions": [
+            "Go to api.slack.com/apps and create a new app",
+            "Choose 'From scratch' and select your workspace",
+            "Under 'OAuth & Permissions', add bot scopes (chat:write, commands, etc.)",
+            "Install the app to your workspace",
+            "Copy the Bot User OAuth Token",
+            "Build your bot logic using Bolt SDK (npm install @slack/bolt)",
+            "Deploy to a free host (Vercel, Railway, etc.)",
+            "Set up Event Subscriptions or Slash Commands pointing to your deployed URL"
           ]
         },
         {
@@ -1831,6 +2555,15 @@
             "teams",
             "enterprise",
             "chat"
+          ],
+          "instructions": [
+            "Install Teams Toolkit in VS Code",
+            "Create a new Teams bot project",
+            "Edit the bot logic to handle messages and commands",
+            "Test locally using the Teams Toolkit (F5)",
+            "Deploy the bot backend to Azure (free tier)",
+            "Register the bot in the Azure Bot Framework",
+            "Publish to your organization's Teams app catalog"
           ]
         },
         {
@@ -1850,6 +2583,15 @@
             "discord",
             "community",
             "chat"
+          ],
+          "instructions": [
+            "Go to discord.com/developers and create a new Application",
+            "Go to Bot section and click 'Add Bot'",
+            "Copy the bot token (keep it secret!)",
+            "Install discord.js: npm install discord.js",
+            "Write your bot logic (handle messages, commands, events)",
+            "Run locally to test, then deploy to Railway or Render (free tier)",
+            "Generate an invite URL and add the bot to your server"
           ]
         },
         {
@@ -1871,6 +2613,15 @@
             "telegram",
             "messaging",
             "simple"
+          ],
+          "instructions": [
+            "Open Telegram and message @BotFather",
+            "Send /newbot and follow the prompts to create your bot",
+            "Copy the API token BotFather gives you",
+            "Install a Telegram library (e.g., node-telegram-bot-api for Node.js)",
+            "Write your bot logic to handle messages and commands",
+            "Run locally to test",
+            "Deploy to any free hosting for production"
           ]
         },
         {
@@ -1892,6 +2643,15 @@
             "whatsapp",
             "customer",
             "messaging"
+          ],
+          "instructions": [
+            "Create a free Twilio account at twilio.com",
+            "Set up a Twilio WhatsApp sandbox (Messaging → Try it Out → WhatsApp)",
+            "Note your Twilio credentials (Account SID, Auth Token)",
+            "Build an endpoint that receives and responds to messages",
+            "Deploy your endpoint (Vercel, Railway, etc.)",
+            "Set your deployed URL as the Twilio webhook",
+            "Send a message to the sandbox number to test"
           ]
         },
         {
@@ -1911,6 +2671,15 @@
             "email",
             "automation",
             "async"
+          ],
+          "instructions": [
+            "Choose an email service: SendGrid, Mailgun, or AWS SES",
+            "Create a free account and verify your sender email/domain",
+            "For sending: use the service's API to send emails programmatically",
+            "For receiving: set up an inbound parse webhook (the service calls your URL with email content)",
+            "Deploy your processing logic to a serverless function",
+            "Set up the webhook URL in your email service dashboard",
+            "Test by sending an email to your configured address"
           ]
         },
         {
@@ -1930,6 +2699,15 @@
             "sms",
             "twilio",
             "mobile"
+          ],
+          "instructions": [
+            "Create a free Twilio account at twilio.com",
+            "Get a Twilio phone number (free trial includes one)",
+            "Install the Twilio SDK: npm install twilio",
+            "To send SMS: use client.messages.create() with your Twilio number",
+            "To receive SMS: set up a webhook URL in the Twilio console",
+            "Deploy your webhook handler (Vercel, Railway, etc.)",
+            "Test by texting your Twilio number"
           ]
         }
       ]
@@ -1961,6 +2739,15 @@
             "javascript",
             "npm",
             "cli"
+          ],
+          "instructions": [
+            "Make sure your package.json has: name, version, description, and bin field",
+            "The bin field maps your command name to your script: {\"mytool\": \"./index.js\"}",
+            "Add #!/usr/bin/env node at the top of your entry script",
+            "Create an account at npmjs.com",
+            "Run: npm login",
+            "Run: npm publish",
+            "Test: npm install -g your-package-name && your-command"
           ]
         },
         {
@@ -1980,6 +2767,15 @@
             "python",
             "pypi",
             "cli"
+          ],
+          "instructions": [
+            "Create a pyproject.toml with project name, version, and dependencies",
+            "Add a [project.scripts] section for CLI entry points",
+            "Install build tools: pip install build twine",
+            "Build: python -m build (creates dist/ folder)",
+            "Create an account at pypi.org",
+            "Upload: twine upload dist/*",
+            "Test: pip install your-package-name"
           ]
         },
         {
@@ -2000,6 +2796,14 @@
             "homebrew",
             "macos",
             "cli"
+          ],
+          "instructions": [
+            "Create a GitHub repo for your tool with a tagged release",
+            "Create a separate 'homebrew-tap' repo (e.g., dvelton/homebrew-mytool)",
+            "Write a Formula (Ruby file) that specifies: URL, SHA256, and install steps",
+            "Push the formula to your tap repo",
+            "Users install with: brew tap yourname/mytool && brew install mytool",
+            "For wider distribution: submit a PR to homebrew/homebrew-core"
           ]
         },
         {
@@ -2019,6 +2823,15 @@
             "github",
             "binary",
             "distribution"
+          ],
+          "instructions": [
+            "Tag your code: git tag v1.0.0 && git push --tags",
+            "Go to your repo on GitHub → Releases → 'Create a new release'",
+            "Select your tag and write release notes",
+            "Drag and drop your compiled binaries (one per OS/architecture)",
+            "Publish the release",
+            "Users download the right binary for their system",
+            "Automate with GitHub Actions: build binaries on tag push and attach to release"
           ]
         },
         {
@@ -2038,6 +2851,14 @@
             "go",
             "binary",
             "zero-dependency"
+          ],
+          "instructions": [
+            "Write your tool in Go (go.dev to get started)",
+            "Build for your current OS: go build -o mytool",
+            "Cross-compile: GOOS=windows GOARCH=amd64 go build -o mytool.exe",
+            "Common targets: darwin/amd64 (Mac Intel), darwin/arm64 (Mac M-series), linux/amd64, windows/amd64",
+            "Each output is a single executable with zero dependencies",
+            "Distribute via GitHub Releases or Homebrew"
           ]
         },
         {
@@ -2058,6 +2879,14 @@
             "shell",
             "quick",
             "installation"
+          ],
+          "instructions": [
+            "Write your install script (bash or sh)",
+            "Host it in a GitHub repo (e.g., install.sh at the root)",
+            "Get the raw URL: https://raw.githubusercontent.com/you/repo/main/install.sh",
+            "Users install with: curl -sSL your-raw-url | bash",
+            "Make sure the script is idempotent (safe to run twice)",
+            "Add error handling and clear output messages"
           ]
         },
         {
@@ -2077,6 +2906,15 @@
             "docker",
             "container",
             "reproducible"
+          ],
+          "instructions": [
+            "Create a Dockerfile in your project root",
+            "Define the base image, copy your files, install dependencies, set the start command",
+            "Build: docker build -t yourusername/mytool .",
+            "Test locally: docker run yourusername/mytool",
+            "Create an account at hub.docker.com",
+            "Push: docker push yourusername/mytool",
+            "Users run: docker run yourusername/mytool"
           ]
         }
       ]
@@ -2103,6 +2941,15 @@
             "content",
             "syndication",
             "feed"
+          ],
+          "instructions": [
+            "Create an XML file following the RSS 2.0 format",
+            "Include channel info: title, link, description",
+            "Add item elements for each piece of content",
+            "Host the XML file on GitHub Pages or any web server",
+            "Add a <link> tag to your HTML pointing to the feed",
+            "Automate updates with a script or GitHub Action",
+            "Test with a feed reader like Feedly or NetNewsWire"
           ]
         },
         {
@@ -2122,6 +2969,14 @@
             "github",
             "dashboard",
             "automated"
+          ],
+          "instructions": [
+            "Create a special repo named after your GitHub username (e.g., dvelton/dvelton)",
+            "Add a README.md — this appears on your GitHub profile",
+            "Create a GitHub Action that runs on a schedule",
+            "The Action runs a script that generates/updates the README with fresh data",
+            "Commit the updated README back to the repo",
+            "Your GitHub profile now shows live, auto-updating content"
           ]
         },
         {
@@ -2141,6 +2996,15 @@
             "github",
             "snippet",
             "sharing"
+          ],
+          "instructions": [
+            "Go to gist.github.com",
+            "Paste your code or content",
+            "Give it a filename (the extension determines syntax highlighting)",
+            "Choose Public or Secret",
+            "Click 'Create Gist'",
+            "Share the URL — anyone can view, fork, or embed it",
+            "Edit anytime — gists support full version history"
           ]
         },
         {
@@ -2160,6 +3024,14 @@
             "api",
             "static",
             "free"
+          ],
+          "instructions": [
+            "Create JSON files with your data (e.g., data/items.json)",
+            "Commit them to a GitHub repo with Pages enabled",
+            "Your JSON is now accessible at: https://yourusername.github.io/repo/data/items.json",
+            "Fetch it from any frontend: fetch('https://yourusername.github.io/repo/data/items.json')",
+            "Update data by committing new JSON files",
+            "Add CORS headers if needed (GitHub Pages allows cross-origin by default)"
           ]
         },
         {
@@ -2179,6 +3051,15 @@
             "data",
             "sqlite",
             "exploration"
+          ],
+          "instructions": [
+            "Install Datasette: pip install datasette",
+            "Run: datasette your-data.db (point it at any SQLite database)",
+            "Browse your data at localhost:8001",
+            "Every table gets a web interface with search, filter, and sort",
+            "JSON API is automatic: add .json to any URL",
+            "Deploy to Fly.io, Google Cloud Run, or Vercel for public access",
+            "Use csvs-to-sqlite to convert CSV files into a queryable database"
           ]
         },
         {
@@ -2198,6 +3079,15 @@
             "data-viz",
             "interactive",
             "notebook"
+          ],
+          "instructions": [
+            "Create a free account at observablehq.com",
+            "Create a new notebook",
+            "Write cells in JavaScript — each cell can display charts, tables, or text",
+            "Use Observable Plot or D3 for data visualization",
+            "Import data from URLs, files, or APIs",
+            "Publish your notebook to share with others",
+            "Others can fork and modify your analysis"
           ]
         },
         {
@@ -2217,6 +3107,15 @@
             "google",
             "automation",
             "spreadsheet"
+          ],
+          "instructions": [
+            "Open any Google Sheet, Doc, or Slide",
+            "Go to Extensions → Apps Script",
+            "Write your functions using Google's APIs (SpreadsheetApp, DocumentApp, etc.)",
+            "For a web app: add a doGet() function and deploy as web app",
+            "For automation: add triggers (time-based, on edit, on form submit)",
+            "Test with the Run button",
+            "Deploy to make available to others in your organization"
           ]
         },
         {
@@ -2241,6 +3140,15 @@
             "microsoft",
             "intranet",
             "work"
+          ],
+          "instructions": [
+            "Go to sharepoint.com and click 'Create site'",
+            "Choose Team site or Communication site",
+            "Add pages, document libraries, lists, and web parts",
+            "Customize the look with themes and layouts",
+            "Share with your team by adding members",
+            "For custom functionality: add SPFx web parts or Power Apps",
+            "Site is accessible to anyone in your Microsoft 365 organization"
           ]
         }
       ]
@@ -2272,6 +3180,14 @@
             "creative",
             "zero-hosting",
             "delightful"
+          ],
+          "instructions": [
+            "Build a small, self-contained HTML/JS application",
+            "Use LZ-String or similar to compress the app code",
+            "Encode the compressed code into a URL hash fragment",
+            "Create a tiny 'runner' page that decompresses and executes the hash",
+            "The resulting URL IS the app — no hosting needed for the app itself",
+            "Share the URL — anyone who opens it gets the full app"
           ]
         },
         {
@@ -2294,6 +3210,14 @@
             "mobile",
             "creative",
             "delightful"
+          ],
+          "instructions": [
+            "Build your tool as a web page hosted anywhere (GitHub Pages, etc.)",
+            "Generate a QR code pointing to your tool's URL (use any free QR generator)",
+            "Print the QR code or display it wherever physical access makes sense",
+            "Users scan with their phone camera to access the tool",
+            "For offline use: encode data directly in the QR code (up to ~3KB)",
+            "Test with multiple phones to ensure compatibility"
           ]
         },
         {
@@ -2316,6 +3240,14 @@
             "art",
             "desktop",
             "delightful"
+          ],
+          "instructions": [
+            "For Mac: build a screen saver (.saver) — macOS can use it as a wallpaper too",
+            "For Windows: use Lively Wallpaper (open source) to run web pages as wallpaper",
+            "For Android: create a Live Wallpaper service (Kotlin/Java)",
+            "Your wallpaper can display: generative art, data visualizations, clocks, weather",
+            "The rendering can be HTML Canvas, WebGL, or native graphics",
+            "Package and share according to your platform"
           ]
         },
         {
@@ -2335,6 +3267,14 @@
             "macos",
             "hardware",
             "delightful"
+          ],
+          "instructions": [
+            "Use BetterTouchTool (simplest: no coding) to add custom Touch Bar buttons",
+            "Or build a native Touch Bar app in Xcode using NSTouchBar API",
+            "Define buttons, sliders, or custom views",
+            "Buttons can trigger scripts, open URLs, or send keystrokes",
+            "Test on a MacBook Pro with Touch Bar",
+            "Share BetterTouchTool presets as JSON files"
           ]
         },
         {
@@ -2355,6 +3295,14 @@
             "wearable",
             "tiny",
             "delightful"
+          ],
+          "instructions": [
+            "Open Xcode and add a watchOS target to your project (or create a new watchOS app)",
+            "Design your complication using ClockKit (watchOS) or WidgetKit (watchOS 10+)",
+            "Define a timeline of entries (what to show and when to refresh)",
+            "Build with SwiftUI for the complication view",
+            "Test in the watchOS Simulator",
+            "Distribute through the App Store (requires Apple Developer account)"
           ]
         },
         {
@@ -2375,6 +3323,15 @@
             "alexa",
             "smart-home",
             "delightful"
+          ],
+          "instructions": [
+            "Create a free account at developer.amazon.com",
+            "Go to the Alexa Developer Console and create a new skill",
+            "Define intents (what the user can ask) and sample utterances",
+            "Write the backend logic (Lambda function or HTTPS endpoint)",
+            "Test in the Alexa Simulator (built into the console)",
+            "Submit for certification to publish publicly",
+            "Users enable your skill: 'Alexa, enable [your skill]'"
           ]
         },
         {
@@ -2394,6 +3351,14 @@
             "voice",
             "google",
             "smart-home"
+          ],
+          "instructions": [
+            "Go to console.actions.google.com and create a new project",
+            "Define your conversational intents using Dialogflow or Actions SDK",
+            "Write fulfillment logic (Cloud Function or webhook)",
+            "Test in the Actions Console simulator",
+            "Submit for review to publish",
+            "Users activate: 'Hey Google, talk to [your action]'"
           ]
         },
         {
@@ -2415,6 +3380,14 @@
             "voice",
             "siri",
             "delightful"
+          ],
+          "instructions": [
+            "Open the Shortcuts app on your Apple device",
+            "Create a new shortcut with your desired actions",
+            "Give it a clear name (this is what you'll say to Siri)",
+            "Add it to Home Screen for one-tap access",
+            "Test with 'Hey Siri, [shortcut name]'",
+            "Share via iCloud link — others can add it to their Shortcuts"
           ]
         },
         {
@@ -2434,6 +3407,15 @@
             "api",
             "event-driven",
             "integration"
+          ],
+          "instructions": [
+            "Choose a host: Val Town (simplest), Cloudflare Workers, or any serverless platform",
+            "Create a function that handles HTTP POST requests",
+            "Parse the incoming JSON payload in your function",
+            "Process the data and return a response",
+            "Deploy and get your public URL",
+            "Configure the external service to send webhooks to your URL",
+            "Add authentication (shared secret or signature verification) for security"
           ]
         },
         {
@@ -2453,6 +3435,15 @@
             "github",
             "automation",
             "developer"
+          ],
+          "instructions": [
+            "Go to github.com/settings/apps and click 'New GitHub App'",
+            "Set a name, homepage URL, and webhook URL",
+            "Choose permissions (what the app can access)",
+            "Subscribe to events (what triggers your app)",
+            "Generate a private key for authentication",
+            "Build your webhook handler to process events",
+            "Deploy and install the app on repos or organizations"
           ]
         },
         {
@@ -2472,6 +3463,14 @@
             "design",
             "figma",
             "creative"
+          ],
+          "instructions": [
+            "Open Figma and go to Plugins → Development → New Plugin",
+            "Choose a template (with or without UI)",
+            "Edit the plugin code (TypeScript) in your editor",
+            "Use the Figma Plugin API to read/modify design elements",
+            "Test by running the plugin from the Figma menu",
+            "Publish to the Figma Community for others to use"
           ]
         },
         {
@@ -2491,6 +3490,14 @@
             "social",
             "decentralized",
             "bot"
+          ],
+          "instructions": [
+            "For Bluesky: create an account and get your API credentials at bsky.app",
+            "For Mastodon: register an app at your instance's /settings/applications",
+            "Use the platform's API to post, reply, and interact",
+            "Libraries: @atproto/api (Bluesky), masto (Mastodon)",
+            "Deploy your bot logic to any free hosting (Val Town, Railway, etc.)",
+            "Set up a cron schedule if it should post periodically"
           ]
         },
         {
@@ -2510,6 +3517,14 @@
             "music",
             "spotify",
             "api"
+          ],
+          "instructions": [
+            "Go to developer.spotify.com and create an app",
+            "Note your Client ID and Client Secret",
+            "Choose your auth flow (Authorization Code for user data, Client Credentials for public data)",
+            "Use the Spotify Web API to fetch data or control playback",
+            "Libraries: spotify-web-api-node (Node.js), spotipy (Python)",
+            "Deploy your app and share"
           ]
         },
         {
@@ -2529,6 +3544,14 @@
             "calendar",
             "events",
             "ics"
+          ],
+          "instructions": [
+            "Create a .ics file following the iCalendar format (RFC 5545)",
+            "Include VEVENT blocks with: summary, start date, end date, description",
+            "Host the .ics file on any web server or GitHub Pages",
+            "Link to it: users click to download and add to their calendar",
+            "For dynamic calendars: generate the .ics from your data source",
+            "Works with Apple Calendar, Google Calendar, Outlook, and every other calendar app"
           ]
         },
         {
@@ -2548,6 +3571,14 @@
             "documents",
             "print",
             "output"
+          ],
+          "instructions": [
+            "Choose a library: jsPDF (client-side), Puppeteer (server-side HTML-to-PDF), or PDFKit",
+            "For jsPDF: build the PDF programmatically with text, images, and tables",
+            "For Puppeteer: design your document as an HTML page and convert to PDF",
+            "Add a 'Download PDF' button to your web app",
+            "Generate the PDF on click and trigger a browser download",
+            "For server-side: return the PDF as an API response with Content-Type: application/pdf"
           ]
         },
         {
@@ -2568,6 +3599,14 @@
             "personal",
             "dashboard",
             "delightful"
+          ],
+          "instructions": [
+            "Create a Chrome extension with manifest.json",
+            "Add 'chrome_url_override': {'newtab': 'newtab.html'} to the manifest",
+            "Build your new tab page as newtab.html with your dashboard/tools/content",
+            "Load unpacked in chrome://extensions to test",
+            "Every new tab now shows your custom page",
+            "Publish to Chrome Web Store to share with others"
           ]
         }
       ]
